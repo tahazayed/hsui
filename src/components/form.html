@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Use these required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- /End -->
+
+        <!-- Use the minimized version of Bootstrap CSS (bootstrap.min.css) either from package or this CDN above/before any other CSS file -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- /End -->
+
+        <!-- Add these stylsheets in this order AFTER/BELOW Bootstrap -->
+        <link rel="stylesheet" href="styles/theme.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <!-- /End -->
+
+        <title>Biometric Results - Test Reports - HealthState</title>
+    </head>
+
+    <body>
+        <!-- Form -->
+        <form id="form-profile" class="form form-lg">
+            <div class="row gutter-80">
+                <div class="col-lg">
+                    <div class="form-row form-gutter-20">
+                        <div class="form-column col-lg">
+                            <div class="form-group">
+                                <label for="first" class="sr-only">First Name</label
+                                ><input
+                                    type="text"
+                                    id="first"
+                                    class="form-control form-control-lg"
+                                    name="first"
+                                    placeholder="First Name"
+                                    autocomplete="on"
+                                    data-group="name"
+                                    value="Jonathan"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-column col-lg">
+                            <div class="form-group">
+                                <label for="last" class="sr-only">Last Name</label
+                                ><input
+                                    type="text"
+                                    id="last"
+                                    class="form-control form-control-lg"
+                                    name="last"
+                                    placeholder="Last Name"
+                                    autocomplete="on"
+                                    data-group="name"
+                                    value="Howland"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row form-gutter-20 node-xs-50">
+                        <div class="form-column col-lg">
+                            <div class="form-group">
+                                <label for="handle" class="sr-only">Handle</label
+                                ><input
+                                    type="text"
+                                    id="handle"
+                                    class="form-control form-control-lg"
+                                    name="handle"
+                                    placeholder="Handle"
+                                    autocomplete="on"
+                                    value="jokokoloko"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-column col-lg">
+                            <div class="form-group">
+                                <label for="avatar" class="sr-only">Avatar</label
+                                ><input
+                                    type="text"
+                                    id="avatar"
+                                    class="form-control form-control-lg"
+                                    name="avatar"
+                                    placeholder="Avatar"
+                                    autocomplete="on"
+                                    value="https://cps-static.rovicorp.com/3/JPG_500/MI0000/019/MI0000019367.jpg?partner=allrovi.com"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row form-gutter-20 node-xs-50">
+                        <div class="form-column col-lg-10">
+                            <div class="form-group">
+                                <label for="street" class="sr-only">Street</label
+                                ><input
+                                    type="text"
+                                    id="street"
+                                    class="form-control form-control-lg"
+                                    name="street"
+                                    placeholder="Street"
+                                    autocomplete="on"
+                                    data-group="address"
+                                    value="350 West Ash Street"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-column col-lg-2">
+                            <div class="form-group">
+                                <label for="unit" class="sr-only">Unit</label
+                                ><input
+                                    type="text"
+                                    id="unit"
+                                    class="form-control form-control-lg"
+                                    name="unit"
+                                    placeholder="Unit"
+                                    autocomplete="on"
+                                    data-group="address"
+                                    value="1103"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row form-gutter-20">
+                        <div class="form-column col-lg-4">
+                            <div class="form-group">
+                                <label for="city" class="sr-only">City</label
+                                ><input
+                                    type="text"
+                                    id="city"
+                                    class="form-control form-control-lg"
+                                    name="city"
+                                    placeholder="City"
+                                    autocomplete="on"
+                                    data-group="address"
+                                    value="San Diego"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-column col-lg-3">
+                            <div class="form-group">
+                                <label for="state" class="sr-only">State</label
+                                ><input
+                                    type="text"
+                                    id="state"
+                                    class="form-control form-control-lg"
+                                    name="state"
+                                    placeholder="State"
+                                    autocomplete="on"
+                                    data-group="address"
+                                    value="California"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-column col-lg-3">
+                            <div class="form-group">
+                                <label for="country" class="sr-only">Country</label
+                                ><input
+                                    type="text"
+                                    id="country"
+                                    class="form-control form-control-lg"
+                                    name="country"
+                                    placeholder="Country"
+                                    autocomplete="on"
+                                    data-group="address"
+                                    value="United States"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-column col-lg-2">
+                            <div class="form-group">
+                                <label for="zip" class="sr-only">Zip</label
+                                ><input
+                                    type="text"
+                                    id="zip"
+                                    class="form-control form-control-lg"
+                                    name="zip"
+                                    placeholder="Zip"
+                                    autocomplete="on"
+                                    data-group="address"
+                                    value="92101"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card card-panel">
+                        <div class="card-body">
+                            <figure class="avatar image square">
+                                <img
+                                    class="no-class fit exact-center img-fluid"
+                                    src="https://cps-static.rovicorp.com/3/JPG_500/MI0000/019/MI0000019367.jpg?partner=allrovi.com"
+                                    alt="Jonathan Howland"
+                                />
+                            </figure>
+
+                            <h2 class="user-name user-name-first user-name-last card-headline">Jonathan Howland</h2>
+                            <h3 class="user-handle card-tagline">@jokokoloko</h3>
+                            <address class="contact user-contact card-meta" itemtype="http://schema.org/Organization" itemscope="">
+                                <p class="address" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope="">
+                                    <span itemprop="addressLocality">San Diego</span>, <span itemprop="addressRegion">California</span>,
+                                    <span itemprop="addressCountry">United States</span>
+                                </p>
+                            </address>
+                            <input type="submit" class="btn btn-primary btn-lg btn-block btn-save" name="save" value="Update" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- /Form -->
+
+        <!-- Use jQuery first, then Popper.js, then Bootstrap JS, and then all other custom UI scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- /End -->
+    </body>
+</html>
