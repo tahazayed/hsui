@@ -920,6 +920,7 @@ textarea:focus {
     }
 }
 .navbar .navbar-menu i {
+    height: 20px;
     display: block;
 }
 .navbar .navbar-menu .icon-bar {
@@ -2568,6 +2569,12 @@ article .learn-more:after {
 #header {
     background-color: #fff;
     border-bottom: 1px solid #eee;
+    min-height: 50px;
+}
+@media (min-width: 992px) {
+    #header {
+        min-height: 80px;
+    }
 }
 #header .logo {
     width: 30px;
@@ -2648,46 +2655,6 @@ article .learn-more:after {
 .navbar-expand-lg .navbar-toggler:focus {
     background-color: #fafafa;
 }
-.contextual-menu {
-    padding-top: 95px;
-}
-.contextual-menu .nav > li > a {
-    background-color: transparent;
-    border: 0 transparent;
-    margin: 0;
-    padding: 10px 20px;
-    width: 100%;
-    position: relative;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-    text-align: left;
-    display: block;
-    cursor: pointer;
-}
-.contextual-menu .nav > li > a:active,
-.contextual-menu .nav > li > a:hover,
-.contextual-menu .nav > li > a:focus {
-    background-color: #fafafa;
-}
-.contextual-menu .nav > li > a:before {
-    position: absolute;
-    left: 0;
-    display: block;
-    content: '';
-}
-.contextual-menu .nav > li > a:before {
-    height: 100%;
-    top: 0;
-    bottom: 0;
-}
-.contextual-menu .nav > li > a.active {
-    font-weight: 400;
-}
-.contextual-menu .nav > li > a.active:before {
-    background: #61bad0;
-    width: 5px;
-}
 .c-offcanvas-content-wrap {
     padding-top: 50px;
     padding-bottom: 0;
@@ -2716,7 +2683,7 @@ article .learn-more:after {
 #offCanvas {
     background: #fff;
 }
-.toolbar-nav > li.dropdown .dropdown-menu {
+.dashboard #toolbar .toolbar-nav > li.dropdown .dropdown-menu {
     background-color: #353e4e !important;
     border: 0 transparent !important;
     margin: 0 !important;
@@ -2829,4 +2796,44 @@ article .learn-more:after {
     border-top: 1px solid #eee;
     margin-top: 80px;
     padding-top: 79px;
+}
+.contextual-menu {
+    padding-top: 95px;
+}
+.contextual-menu .nav > li > a {
+    background-color: transparent;
+    border: 0 transparent;
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    display: block;
+    cursor: pointer;
+}
+.contextual-menu .nav > li > a:active,
+.contextual-menu .nav > li > a:hover,
+.contextual-menu .nav > li > a:focus {
+    background-color: #fafafa;
+}
+.contextual-menu .nav > li > a:before {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: '';
+}
+.contextual-menu .nav > li > a:before {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+.contextual-menu .nav > li > a.active {
+    font-weight: 400;
+}
+.contextual-menu .nav > li > a.active:before {
+    background: #61bad0;
+    width: 5px;
 }
