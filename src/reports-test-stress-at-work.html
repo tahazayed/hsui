@@ -104,6 +104,31 @@
                         </div>
                     </div>
                     <!-- /Group -->
+
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-3" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-3"
+                                aria-expanded="false"
+                                aria-controls="collapse-3"
+                            >
+                                Resources
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-3" class="card-collapse collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
                 </div>
                 <!-- /Accordion -->
             </nav>
@@ -132,8 +157,8 @@
                                         <!-- Content -->
                                         <section class="node-xs-50">
                                             <!-- Report -->
-                                            <article id="report-stress-at-work" class="report">
-                                                <h3>Stress At Work</h3>
+                                            <article id="report-blood-cholesterol" class="report">
+                                                <h3>Blood Cholesterol</h3>
                                                 <!-- Chart -->
                                                 <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
                                                 <!-- /Chart -->
@@ -141,8 +166,8 @@
                                             <!-- /Report -->
 
                                             <!-- Report -->
-                                            <article id="report-stress-at-home" class="report">
-                                                <h3>Stress At Home</h3>
+                                            <article id="report-total-cholesterol" class="report">
+                                                <h3>Total Cholesterol</h3>
                                                 <!-- Chart -->
                                                 <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
                                                 <!-- /Chart -->
@@ -155,10 +180,8 @@
                                         <!-- Menu -->
                                         <nav id="menu-contextual" class="contextual-menu">
                                             <ul class="contextual-nav nav flex-column">
-                                                <li class="nav-item"><a class="nav-link active" href="#">Stress At Work</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="#">Stress At Home</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="#">Blood Cholestrol</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="#">Total Cholestrol</a></li>
+                                                <li class="nav-item"><a class="nav-link active" href="#">Blood Cholesterol</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Total Cholesterol</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#">LDL</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#">HDL</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#">Blood Glucose</a></li>
@@ -187,7 +210,11 @@
         <!-- /Wrapper -->
 
         <!-- Offcanvas -->
-        <aside id="offCanvas">Offcanvas</aside>
+        <aside id="offCanvas">
+            <button type="button" id="offCanvasClose" class="btn btn-link btn-close" onclick="$('#offCanvas').data('offcanvas-component').close();">
+                <i class="fas fa-times"></i>
+            </button>
+        </aside>
         <!-- /Offcanvas -->
 
         <!-- Use jQuery first, then Popper.js, then Bootstrap JS, and then all other custom UI scripts -->
