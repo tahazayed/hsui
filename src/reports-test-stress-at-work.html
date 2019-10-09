@@ -22,7 +22,10 @@
         <!-- /End -->
 
         <title>Biometric Results - Test Reports - HealthState</title>
+
+        <!-- FontAwesome - It might be better to download the package instead of using this CDN -->
         <script src="https://kit.fontawesome.com/fbd365346d.js" crossorigin="anonymous"></script>
+        <!-- /End -->
     </head>
 
     <body id="body" class="dashboard">
@@ -31,22 +34,79 @@
             <!-- Header -->
             <header id="header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
                 <div class="container-fluid">
-                    <a id="triggerButton" class="navbar-menu navbar-toggler ml-auto" href="#offCanvas"><i class="fas fa-user-circle"></i></a>
+                    <a id="triggerButton" class="navbar-menu navbar-toggler ml-auto btn" href="#offCanvas"><i class="fas fa-user-circle"></i></a>
                 </div>
             </header>
             <!-- /Header -->
 
             <!-- Toolbar -->
-            <aside id="toolbar" class="d-none d-lg-block">
-                <a class="toolbar-brand" title="Spectre" rel="home" href="/">HealthState</a>
-                <ul class="toolbar-nav nav flex-column">
-                    <li class="nav-item"><a class="nav-link active" href="/" aria-current="page">Results</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/">Orders</a></li>
-                </ul>
-                <ul class="toolbar-nav nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="/">Information</a></li>
-                </ul>
-            </aside>
+            <nav id="toolbar" class="d-none d-lg-block">
+                <!-- Logo -->
+                <a class="toolbar-brand" title="Spectre" rel="home" href="#">HealthState</a>
+                <!-- /Logo -->
+
+                <!-- Accordion -->
+                <div id="accordion" class="accordion toolbar-nav">
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-1" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-1"
+                                aria-expanded="false"
+                                aria-controls="collapse-1"
+                            >
+                                Detailed Reports
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-1" class="card-collapse collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center active" href="#">Biometric Results</a></li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Stress Results</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Workplace Questionnaire Results</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-2" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-2"
+                                aria-expanded="false"
+                                aria-controls="collapse-2"
+                            >
+                                Test Orders
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-2" class="card-collapse collapse" aria-labelledby="heading-2" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Create Test Order</a></li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Order History</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Individual Order Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+                </div>
+                <!-- /Accordion -->
+            </nav>
             <!-- /Toolbar -->
 
             <!-- Main -->
@@ -65,15 +125,29 @@
 
                                         <!-- Filter -->
                                         <aside class="node-xs-50">
-                                            <p>From Date:</p>
+                                            <p>Filters</p>
                                         </aside>
                                         <!-- /Filter -->
 
                                         <!-- Content -->
                                         <section class="node-xs-50">
-                                            <!-- Chart -->
-                                            <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
-                                            <!-- /Chart -->
+                                            <!-- Report -->
+                                            <article id="report-stress-at-work" class="report">
+                                                <h3>Stress At Work</h3>
+                                                <!-- Chart -->
+                                                <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
+                                                <!-- /Chart -->
+                                            </article>
+                                            <!-- /Report -->
+
+                                            <!-- Report -->
+                                            <article id="report-stress-at-home" class="report">
+                                                <h3>Stress At Home</h3>
+                                                <!-- Chart -->
+                                                <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
+                                                <!-- /Chart -->
+                                            </article>
+                                            <!-- /Report -->
                                         </section>
                                         <!-- /Content -->
                                     </div>
@@ -81,15 +155,15 @@
                                         <!-- Menu -->
                                         <nav id="menu-contextual" class="contextual-menu">
                                             <ul class="contextual-nav nav flex-column">
-                                                <li class="nav-item"><a class="nav-link active" href="/">Stress At Work</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">Stress At Home</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">Blood Cholestrol</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">Total Cholestrol</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">LDL</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">HDL</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">Blood Glucose</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">Triglycerides</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/">BMI</a></li>
+                                                <li class="nav-item"><a class="nav-link active" href="#">Stress At Work</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Stress At Home</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Blood Cholestrol</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Total Cholestrol</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">LDL</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">HDL</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Blood Glucose</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Triglycerides</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">BMI</a></li>
                                             </ul>
                                         </nav>
                                         <!-- /Menu -->
@@ -105,7 +179,7 @@
             <!-- Footer -->
             <footer id="footer" class="navbar navbar-expand-lg navbar-fixed-bottom bottom" role="contentinfo">
                 <div class="container-fluid">
-                    <p class="copyright navbar-text"><a class="navbar-link" title="HealthState" rel="home" href="/">HealthState</a> © 2019</p>
+                    <p class="copyright navbar-text"><a class="navbar-link" title="HealthState" rel="home" href="#">HealthState</a> © 2019</p>
                 </div>
             </footer>
             <!-- /Footer -->
