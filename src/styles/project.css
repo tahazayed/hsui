@@ -2604,7 +2604,11 @@ article .learn-more:after {
 }
 #footer .copyright {
     margin: 0;
-    margin-left: -15px;
+}
+@media (min-width: 992px) {
+    #footer .copyright {
+        margin-left: -15px;
+    }
 }
 #footer #footer-default .zone .case {
     padding-top: 10px;
@@ -2635,6 +2639,15 @@ article .learn-more:after {
     #footer #footer-second .copyright {
         padding-top: 0;
         text-align: right;
+    }
+}
+@media (min-width: 1440px) {
+    .col-hg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
     }
 }
 .navbar-expand-lg .navbar-toggler {
@@ -2943,7 +2956,8 @@ article .learn-more:after {
     right: 0;
 }
 .dashboard #filters .dropdown .dropdown-toggle > .icon {
-    margin: 9px 15px;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 .dashboard #filters .dropdown .dropdown-menu {
     border-width: 2px;
@@ -3012,5 +3026,45 @@ article .learn-more:after {
 }
 .dashboard #filters .filter-departments > .dropdown-toggle,
 .dashboard #filters .filter-departments > .dropdown-menu {
+    border-color: rgba(142, 111, 177, 0.2);
+}
+.dashboard #tags {
+    margin-bottom: -10px;
+    margin-right: -10px;
+}
+.dashboard #tags + .report {
+    margin-top: 50px;
+}
+.dashboard #tags .tag {
+    border-width: 2px;
+    border-radius: 100px !important;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 0 13px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #353e4e !important;
+    display: inline-block;
+}
+.dashboard #tags .tag-test-orders {
+    background-color: rgba(255, 198, 78, 0.2);
+    border-color: rgba(255, 198, 78, 0.2);
+}
+.dashboard #tags .tag-dates {
+    background-color: rgba(88, 95, 171, 0.2);
+    border-color: rgba(88, 95, 171, 0.2);
+}
+.dashboard #tags .tag-roles {
+    background-color: rgba(248, 157, 73, 0.2);
+    border-color: rgba(248, 157, 73, 0.2);
+}
+.dashboard #tags .tag-locations {
+    background-color: rgba(63, 187, 146, 0.2);
+    border-color: rgba(63, 187, 146, 0.2);
+}
+.dashboard #tags .tag-departments {
+    background-color: rgba(142, 111, 177, 0.2);
     border-color: rgba(142, 111, 177, 0.2);
 }
