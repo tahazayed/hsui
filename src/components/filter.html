@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Use these required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- /End -->
+
+        <!-- Use the minimized version of Bootstrap CSS (bootstrap.min.css) either from package or this CDN above/before any other CSS file -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <!-- /End -->
+
+        <!-- Add these stylsheets in this order AFTER/BELOW Bootstrap -->
+        <link rel="stylesheet" href="styles/theme.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <!-- /End -->
+
+        <title>Biometric Results - Test Reports - HealthState</title>
+    </head>
+
+    <body>
+        <div class="filter-test-orders filter dropdown">
+            <button type="button" id="dropdownMenuButton" class="btn btn-filter dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Test Orders
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu-node">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="customCheck0" class="custom-control-input" />
+                        <label class="custom-control-label" for="customCheck0">All Test Orders</label>
+                    </div>
+                </div>
+                <div class="dropdown-menu-node">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="customCheck1" class="custom-control-input" />
+                        <label class="custom-control-label" for="customCheck1">MC-XXXX-XXX</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="customCheck2" class="custom-control-input" />
+                        <label class="custom-control-label" for="customCheck2">MC-XXXX-XXX</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="customCheck3" class="custom-control-input" />
+                        <label class="custom-control-label" for="customCheck3">MC-XXXX-XXX</label>
+                    </div>
+                </div>
+                <div class="dropdown-menu-node dropdown-menu-action d-flex justify-content-between">
+                    <span class="dropdown-menu-action-button do-reset">Reset</span>
+                    <span class="dropdown-menu-action-button">Save</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Use jQuery first, then Popper.js, then Bootstrap JS, and then all other custom UI scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- /End -->
+    </body>
+
+</html>
