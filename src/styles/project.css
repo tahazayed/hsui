@@ -2705,6 +2705,9 @@ article .learn-more:after {
 .dashboard #toolbar .toolbar-brand {
     border-bottom: 1px solid #474e60;
     font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 @media (min-width: 992px) {
     .dashboard #toolbar .toolbar-brand {
@@ -2829,13 +2832,27 @@ article .learn-more:after {
     padding-top: 49px;
 }
 .contextual-menu {
-    padding-top: 115px;
+    margin-top: 115px;
+    max-width: 273px;
+}
+.contextual-menu.affix {
+    margin-right: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
 }
 .contextual-menu h4 {
+    margin: -4px -1px -5px;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 16px;
     text-transform: uppercase;
+    color: #3fbb92;
 }
 .contextual-menu h4 + ul {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .contextual-menu .nav > li > a {
     background-color: transparent;
@@ -2851,9 +2868,7 @@ article .learn-more:after {
     display: block;
     cursor: pointer;
 }
-.contextual-menu .nav > li > a:active,
-.contextual-menu .nav > li > a:hover,
-.contextual-menu .nav > li > a:focus {
+.contextual-menu .nav > li > a:hover {
     background-color: #fafafa;
 }
 .contextual-menu .nav > li > a:before {
@@ -3033,7 +3048,7 @@ article .learn-more:after {
     margin-right: -10px;
 }
 .dashboard #tags + .report {
-    margin-top: 50px;
+    margin-top: 44px;
 }
 .dashboard #tags .tag {
     border-width: 2px;
