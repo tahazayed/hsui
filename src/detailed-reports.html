@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="styles/project.css" />
         <!-- /End -->
 
-        <title>Biometric Results - Test Reports - HealthState</title>
+        <title>Biometric Heart Vitality - Test Reports - Mission Health</title>
 
         <!-- FontAwesome - It might be better to download the package instead of using this CDN -->
         <script src="https://kit.fontawesome.com/fbd365346d.js" crossorigin="anonymous"></script>
@@ -42,7 +42,7 @@
             <!-- Toolbar -->
             <nav id="toolbar" class="d-none d-lg-block">
                 <!-- Logo -->
-                <a class="toolbar-brand" title="Spectre" rel="home" href="#">HealthState</a>
+                <a class="toolbar-brand" title="Spectre" rel="home" href="#">Mission Health</a>
                 <!-- /Logo -->
 
                 <!-- Accordion -->
@@ -65,8 +65,10 @@
                         <div id="collapse-1" class="card-collapse collapse" aria-labelledby="heading-1" data-parent="#accordion">
                             <div class="card-body">
                                 <ul class="nav flex-column">
-                                    <li class="nav-item"><a class="nav-link d-flex align-items-center active" href="#">Biometric Results</a></li>
-                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Stress Results</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center active" href="#">Biometric Heart Vitality</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Stress Hormone Plus</a></li>
                                     <li class="nav-item">
                                         <a class="nav-link d-flex align-items-center" href="#">Workplace Questionnaire Results</a>
                                     </li>
@@ -144,13 +146,224 @@
                                     <div class="col-lg">
                                         <!-- Title -->
                                         <header class="node-xs-50">
-                                            <h1>Biometric Results</h1>
+                                            <h2>Detailed Reports</h2>
+                                            <h1>Biometric Heart Vitality</h1>
                                         </header>
                                         <!-- /Title -->
 
                                         <!-- Filter -->
                                         <aside class="node-xs-50">
-                                            <p>Filters</p>
+                                            <form id="filters" class="panel">
+                                                <span class="panel-label">Filters</span>
+                                                <!-- Section -->
+                                                <div class="panel-section">
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                            <div class="filter-test-orders filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Test Orders
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck0"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customCheck0"
+                                                                                >All Test Orders</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck1" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck1">MC-XXXX-XXX</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck2" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck2">MC-XXXX-XXX</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck3" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck3">MC-XXXX-XXX</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="filter-dates filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle no-caret"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Dates<i class="icon far fa-calendar-alt"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        Calendar
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="filter-roles filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Roles
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio0"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio0">All Roles</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio1"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio1">Supervisor</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio2"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio2">Employee</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="filter-locations filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Locations
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck10"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customCheck10"
+                                                                                >All Locations</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck11" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck11">Chicago</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck12" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck12">Boston</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck13" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck13">New York</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="filter-departments filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Departments
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck110"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customCheck110"
+                                                                                >All Departments</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck111" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck111">Creative</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck112" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck112">Finance</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck113" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck113"
+                                                                                >Human Resources</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-action d-flex justify-content-end">
+                                                        <span class="panel-button do-reset">Reset Filters</span>
+                                                        <span class="panel-button">Apply Filters</span>
+                                                    </div>
+                                                </div>
+                                                <!-- /Section -->
+                                            </form>
                                         </aside>
                                         <!-- /Filter -->
 
@@ -162,6 +375,43 @@
                                                 <!-- Chart -->
                                                 <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
                                                 <!-- /Chart -->
+
+                                                <!-- Modal -->
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-main btn-trigger"
+                                                    data-toggle="modal"
+                                                    data-target="#exampleModal"
+                                                >
+                                                    <i class="icon far fa-envelope"></i>Send an email
+                                                </button>
+                                                <div
+                                                    id="exampleModal"
+                                                    class="modal fade"
+                                                    tabindex="-1"
+                                                    role="dialog"
+                                                    aria-labelledby="exampleModalLabel"
+                                                    aria-hidden="true"
+                                                >
+                                                    <div class="modal-dialog modal-report modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /Modal -->
                                             </article>
                                             <!-- /Report -->
 
@@ -171,6 +421,89 @@
                                                 <!-- Chart -->
                                                 <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
                                                 <!-- /Chart -->
+
+                                                <!-- Modal -->
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-main btn-trigger"
+                                                    data-toggle="modal"
+                                                    data-target="#exampleModal"
+                                                >
+                                                    <i class="icon far fa-envelope"></i>Send an email
+                                                </button>
+                                                <div
+                                                    id="exampleModal"
+                                                    class="modal fade"
+                                                    tabindex="-1"
+                                                    role="dialog"
+                                                    aria-labelledby="exampleModalLabel"
+                                                    aria-hidden="true"
+                                                >
+                                                    <div class="modal-dialog modal-report modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /Modal -->
+                                            </article>
+                                            <!-- /Report -->
+
+                                            <!-- Report -->
+                                            <article id="report-ldl" class="report">
+                                                <h3>LDL</h3>
+                                                <!-- Chart -->
+                                                <img class="img-fluid" src="https://via.placeholder.com/1440x500.jpg?text=Chart" />
+                                                <!-- /Chart -->
+
+                                                <!-- Modal -->
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-main btn-trigger"
+                                                    data-toggle="modal"
+                                                    data-target="#exampleModal"
+                                                >
+                                                    <i class="icon far fa-envelope"></i>Send an email
+                                                </button>
+                                                <div
+                                                    id="exampleModal"
+                                                    class="modal fade"
+                                                    tabindex="-1"
+                                                    role="dialog"
+                                                    aria-labelledby="exampleModalLabel"
+                                                    aria-hidden="true"
+                                                >
+                                                    <div class="modal-dialog modal-report modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /Modal -->
                                             </article>
                                             <!-- /Report -->
                                         </section>
@@ -179,10 +512,13 @@
                                     <div class="col-lg-3">
                                         <!-- Menu -->
                                         <nav id="menu-contextual" class="contextual-menu">
+                                            <h4>Panels Tested</h4>
                                             <ul class="contextual-nav nav flex-column">
-                                                <li class="nav-item"><a class="nav-link active" href="#">Blood Cholesterol</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="#">Total Cholesterol</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="#">LDL</a></li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#report-blood-cholesterol">Blood Cholesterol</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="#report-total-cholesterol">Total Cholesterol</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#report-ldl">LDL</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#">HDL</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#">Blood Glucose</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#">Triglycerides</a></li>
@@ -202,7 +538,7 @@
             <!-- Footer -->
             <footer id="footer" class="navbar navbar-expand-lg navbar-fixed-bottom bottom" role="contentinfo">
                 <div class="container-fluid">
-                    <p class="copyright navbar-text"><a class="navbar-link" title="HealthState" rel="home" href="#">HealthState</a> © 2019</p>
+                    <p class="copyright navbar-text"><a class="navbar-link" title="Mission Health" rel="home" href="#">Mission Health</a> © 2019</p>
                 </div>
             </footer>
             <!-- /Footer -->
