@@ -34,7 +34,7 @@
             <!-- Header -->
             <header id="header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
                 <div class="container-fluid">
-                    <a id="triggerButton" class="navbar-menu navbar-toggler ml-auto btn" href="#offCanvas"><i class="fas fa-user-circle"></i></a>
+                    <a id="triggerButton" class="navbar-menu navbar-toggler btn ml-auto" href="#offCanvas"><i class="icon fas fa-user-circle"></i></a>
                 </div>
             </header>
             <!-- /Header -->
@@ -42,7 +42,7 @@
             <!-- Toolbar -->
             <nav id="toolbar" class="d-none d-lg-block">
                 <!-- Logo -->
-                <a class="toolbar-brand" title="Spectre" rel="home" href="#">Mission Health</a>
+                <a class="toolbar-brand" title="Mission Health" rel="home" href="/">Mission Health</a>
                 <!-- /Logo -->
 
                 <!-- Accordion -->
@@ -71,6 +71,9 @@
                                     <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Stress Hormone Plus</a></li>
                                     <li class="nav-item">
                                         <a class="nav-link d-flex align-items-center" href="#">Workplace Questionnaire Results</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Results Status</a>
                                     </li>
                                 </ul>
                             </div>
@@ -394,7 +397,7 @@
                                                 <!-- Modal -->
                                                 <button
                                                     type="button"
-                                                    class="btn btn-main btn-trigger"
+                                                    class="btn btn-alternate btn-trigger"
                                                     data-toggle="modal"
                                                     data-target="#exampleModal"
                                                 >
@@ -440,7 +443,7 @@
                                                 <!-- Modal -->
                                                 <button
                                                     type="button"
-                                                    class="btn btn-main btn-trigger"
+                                                    class="btn btn-alternate btn-trigger"
                                                     data-toggle="modal"
                                                     data-target="#exampleModal"
                                                 >
@@ -486,7 +489,7 @@
                                                 <!-- Modal -->
                                                 <button
                                                     type="button"
-                                                    class="btn btn-main btn-trigger"
+                                                    class="btn btn-alternate btn-trigger"
                                                     data-toggle="modal"
                                                     data-target="#exampleModal"
                                                 >
@@ -556,9 +559,279 @@
 
         <!-- Offcanvas -->
         <aside id="offCanvas">
-            <button type="button" id="offCanvasClose" class="btn btn-link btn-close" onclick="$('#offCanvas').data('offcanvas-component').close();">
-                <i class="fas fa-times"></i>
-            </button>
+            <!-- Header -->
+            <header id="offcanvas-header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" title="Mission Health" rel="home" href="/"><i class="icon fas fa-user-circle"></i>Mission Health</a>
+                    <!-- /Logo -->
+
+                    <!-- Close -->
+                    <button type="button" id="offCanvasClose" class="btn btn-link btn-close ml-auto">
+                        <i class="icon fas fa-times"></i>
+                    </button>
+                    <!-- /Close -->
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Main -->
+            <main id="offcanvas-main" role="main">
+                <div class="container-fluid">
+                    <section class="basic block height-auto align-left background-none color-0">
+                        <div class="zone relative space-xs-50 space-lg-80 tint-none">
+                            <div class="container-fluid">
+                                <div class="row gutter-80">
+                                    <div class="col-xl">
+                                        <div class="case">
+                                            <h4>Contact Your Account Manager</h4>
+                                            <form class="form-style">
+                                                <div class="form-group">
+                                                    <label for="contact-name">Name</label>
+                                                    <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-title">Title</label>
+                                                    <input type="text" id="contact-title" class="form-control" placeholder="Enter your job title" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-email">Email</label>
+                                                    <input type="email" id="contact-email" class="form-control" placeholder="example@email.com" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-topic">Topic</label>
+                                                    <select id="contact-topic" class="custom-select">
+                                                        <option value="1" selected>General</option>
+                                                        <option value="2">Technical</option>
+                                                        <option value="3">Data</option>
+                                                    </select>
+                                                    <div class="arrow d-flex align-items-center">
+                                                        <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-message">Message</label>
+                                                    <textarea
+                                                        id="contact-message"
+                                                        class="form-control"
+                                                        placeholder="Enter your message..."
+                                                    ></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-main">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl">
+                                        <div class="base">
+                                            <h4>Company Information</h4>
+                                            <form class="form-style">
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-name">Company Name</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-name"
+                                                                class="form-control"
+                                                                value="Mission Health"
+                                                                readonly
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-subscription-level">Subscription Level</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-subscription-level"
+                                                                class="form-control"
+                                                                value="Pilot"
+                                                                readonly
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-industry">Industry</label>
+                                                            <select id="company-industry" class="custom-select">
+                                                                <option value="1" selected>Medical</option>
+                                                                <option value="2">Real Estate</option>
+                                                                <option value="3">Retail</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-address-1">Address 1</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-address-1"
+                                                                class="form-control"
+                                                                placeholder="Enter your street address"
+                                                                value="509 Biltmore Ave."
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-address-2">Address 2</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-address-2"
+                                                                class="form-control"
+                                                                placeholder="Suite #, PO Box #, etc."
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-country">Country</label>
+                                                            <select id="company-country" class="custom-select">
+                                                                <option value="1" selected>United States</option>
+                                                                <option value="2">Venezuela</option>
+                                                                <option value="3">Wales</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-row form-gutter-20">
+                                                            <div class="form-column col-lg">
+                                                                <div class="form-group">
+                                                                    <label for="company-city">City</label>
+                                                                    <input
+                                                                        type="text"
+                                                                        id="company-city"
+                                                                        class="form-control"
+                                                                        placeholder="Enter city"
+                                                                        value="Asheville"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-column col-lg-3">
+                                                                <div class="form-group">
+                                                                    <label for="company-state">State</label>
+                                                                    <select id="company-state" class="custom-select">
+                                                                        <option value="1" selected>NC</option>
+                                                                        <option value="2">TX</option>
+                                                                        <option value="3">WA</option>
+                                                                    </select>
+                                                                    <div class="arrow d-flex align-items-center">
+                                                                        <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-zipcode">Zipcode</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-zipcode"
+                                                                class="form-control"
+                                                                placeholder="Enter zipcode"
+                                                                value="28801"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-person-name">Contact Person Name (Admin)</label>
+                                                            <input type="text" id="company-person-name" class="form-control" placeholder="Admin" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-title">Title</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-title"
+                                                                class="form-control"
+                                                                placeholder="Admin"
+                                                                value="Head of Human Resources"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-email">Email</label>
+                                                            <input
+                                                                type="email"
+                                                                id="company-email"
+                                                                class="form-control"
+                                                                placeholder="example@email.com"
+                                                                value="admin@missionhealth.com"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-phone">Phone</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-phone"
+                                                                class="form-control"
+                                                                placeholder="(555) 555-5555"
+                                                                value="(002) 120-1095"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-text do-cancel">Cancel</button>
+                                                    <button type="submit" class="btn btn-text do-save">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- /Main -->
+
+            <!-- Footer -->
+            <footer id="offcanvas-footer" class="navbar navbar-expand-lg" role="contentinfo">
+                <div class="container-fluid">
+                    <p class="navbar-text to-company">
+                        <a
+                            class="navbar-link"
+                            title="Confirm BioSciences"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.confirmbiosciences.com/"
+                            >Confirm BioSciences</a
+                        >
+                        &ndash; 10123 Carroll Canyon Road, San Diego, CA 92131 &ndash; 800-908-5603
+                    </p>
+                    <a class="navbar-link to-dashboard" href="#" role="button">Return To Main Dashboard<i class="icon fas fa-sign-out-alt"></i></a>
+                </div>
+            </footer>
+            <!-- /Footer -->
         </aside>
         <!-- /Offcanvas -->
 
@@ -620,6 +893,11 @@
                 $('#offCanvas').offcanvas({
                     modifiers: 'right, push', // default options
                     triggerButton: '#triggerButton', // btn to open offcanvas
+                });
+                $('#offCanvasClose').click(function() {
+                    $('#offCanvas')
+                        .data('offcanvas-component')
+                        .close();
                 });
             });
         </script>
