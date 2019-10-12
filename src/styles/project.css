@@ -273,6 +273,12 @@
     bottom: 0;
     right: 0;
 }
+@media (max-width: 991.98px) {
+    .dashboard #offcanvas-main .base {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 @media (min-width: 992px) {
     .dashboard #offcanvas-main .base {
         padding-top: 80px;
@@ -281,7 +287,12 @@
 .dashboard #offcanvas-main .case {
     background-color: #474e60;
     border-radius: 10px !important;
-    padding: 80px;
+    padding: 50px 30px;
+}
+@media (min-width: 992px) {
+    .dashboard #offcanvas-main .case {
+        padding: 80px;
+    }
 }
 .dashboard #offcanvas-main .case h4 {
     color: #3fbb92;
@@ -300,6 +311,12 @@
     font-size: 16px;
     font-weight: 400;
     color: #fff !important;
+}
+@media (max-width: 991.98px) {
+    .dashboard #offcanvas-footer .navbar-text {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
 }
 @media (min-width: 992px) {
     .dashboard #offcanvas-footer .to-company {
@@ -455,7 +472,12 @@
 }
 .contextual-menu {
     margin-top: 115px;
-    max-width: 273px;
+    max-width: 213px;
+}
+@media (min-width: 1560px) {
+    .contextual-menu {
+        max-width: 273px;
+    }
 }
 .contextual-menu.affix {
     margin-right: 50px;
