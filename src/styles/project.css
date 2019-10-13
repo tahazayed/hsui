@@ -105,6 +105,52 @@
 .img-fluid + .btn-trigger {
     margin-top: 20px;
 }
+.selection .selection-option {
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.selection .selection-option:active,
+.selection .selection-option:hover,
+.selection .selection-option:focus {
+    background-color: #fafafa;
+}
+.selection .selection-option.selected {
+    background-color: rgba(63, 187, 146, 0.05) !important;
+    border-color: #3fbb92 !important;
+}
+.selection .selection-option .selection-option-value + .selection-option-text {
+    padding-top: 20px;
+}
+.selection .selection-option .selection-option-value {
+    margin: -9px -2px -11px;
+    line-height: 45px;
+    font-size: 34px;
+}
+.selection .selection-option .selection-option-value > .symbol {
+    font-size: 16px;
+}
+.selection .selection-option.level-very-high .selection-option-value {
+    color: #f89d49;
+}
+.selection .selection-option.level-slightly-high .selection-option-value {
+    color: #ffc64e;
+}
+.selection .selection-option.level-normal .selection-option-value {
+    color: #3fbb92;
+}
+.selection .selection-option.level-slightly-low .selection-option-value {
+    color: #8e6fb1;
+}
+.selection .selection-option.level-very-low .selection-option-value {
+    color: #585fab;
+}
+.selection .selection-option .selection-option-text {
+    margin: -5px -2px -5px;
+    line-height: 22px;
+    font-size: 16px;
+}
 .form-style textarea {
     resize: none;
 }
@@ -123,8 +169,9 @@
 .form-style .form-row + .form-row {
     padding-top: 10px;
 }
-.modal .modal-dialog.modal-report {
+.modal .modal-dialog {
     max-width: 890px;
+    height: 100vh;
 }
 .modal .modal-dialog .modal-content {
     border-radius: 10px !important;
@@ -161,7 +208,9 @@
     }
 }
 .modal .modal-dialog .modal-content .modal-body h4 + form,
-.modal .modal-dialog .modal-content .modal-body p + form {
+.modal .modal-dialog .modal-content .modal-body p + form,
+.modal .modal-dialog .modal-content .modal-body h4 + .selection,
+.modal .modal-dialog .modal-content .modal-body p + .selection {
     padding-top: 50px;
 }
 .modal .modal-dialog .modal-content .modal-body .form-style textarea {
@@ -169,6 +218,10 @@
 }
 .modal .modal-dialog .modal-content .modal-footer {
     z-index: 1;
+}
+.modal .modal-dialog .modal-content .modal-footer .modal-footer-text {
+    font-size: 16px;
+    font-weight: 700;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn-text {
     margin: -30px -15px;

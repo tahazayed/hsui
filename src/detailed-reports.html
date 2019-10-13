@@ -408,24 +408,75 @@
                                                     class="modal fade"
                                                     tabindex="-1"
                                                     role="dialog"
-                                                    aria-labelledby="exampleModalLabel"
                                                     aria-hidden="true"
                                                 >
                                                     <div class="modal-dialog modal-report modal-dialog-centered" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
+                                                                    <i class="icon fas fa-times"></i>
                                                                 </button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                ...
+                                                                <h4 class="modal-title">Select Recipient(s)</h4>
+                                                                <p>Please select specified groups for engagement email.</p>
+                                                                <div class="selection">
+                                                                    <div class="row gutter-30">
+                                                                        <div class="col-4">
+                                                                            <div class="selection-option level-very-high panel selected">
+                                                                                <p class="selection-option-value">
+                                                                                    16.11<span class="symbol">%</span>
+                                                                                </p>
+                                                                                <p class="selection-option-text">
+                                                                                    has very high blood cholesterol levels
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4">
+                                                                            <div class="selection-option level-slightly-high panel selected">
+                                                                                <p class="selection-option-value">
+                                                                                    30.48<span class="symbol">%</span>
+                                                                                </p>
+                                                                                <p class="selection-option-text">
+                                                                                    has slightly high blood cholesterol levels
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4">
+                                                                            <div class="selection-option level-normal panel">
+                                                                                <p class="selection-option-value">
+                                                                                    12.53<span class="symbol">%</span>
+                                                                                </p>
+                                                                                <p class="selection-option-text">
+                                                                                    has normal blood cholesterol levels
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4">
+                                                                            <div class="selection-option level-slightly-low panel">
+                                                                                <p class="selection-option-value">
+                                                                                    33.18<span class="symbol">%</span>
+                                                                                </p>
+                                                                                <p class="selection-option-text">
+                                                                                    has slightly low blood cholesterol levels
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4">
+                                                                            <div class="selection-option level-very-low panel">
+                                                                                <p class="selection-option-value">
+                                                                                    7.07<span class="symbol">%</span>
+                                                                                </p>
+                                                                                <p class="selection-option-text">
+                                                                                    has very low blood cholesterol levels
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="modal-footer justify-content-between">
-                                                                <button type="button" class="btn btn-text to-previous">
-                                                                    <i class="icon far fa-chevron-left"></i>Back
-                                                                </button>
+                                                                <p class="modal-footer-text">232 recipients selected</p>
                                                                 <button type="button" class="btn btn-text to-next">
                                                                     Next<i class="icon far fa-chevron-right"></i>
                                                                 </button>
@@ -458,7 +509,6 @@
                                                     class="modal fade"
                                                     tabindex="-1"
                                                     role="dialog"
-                                                    aria-labelledby="exampleModalLabel"
                                                     aria-hidden="true"
                                                 >
                                                     <div class="modal-dialog modal-report modal-dialog-centered" role="document">
@@ -534,17 +584,41 @@
                                                     <div class="modal-dialog modal-report modal-dialog-centered" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
+                                                                    <i class="icon fas fa-times"></i>
                                                                 </button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                ...
+                                                                <h4 class="modal-title">Draft Message</h4>
+                                                                <p>NOTE: This draft must be completed and sent from the Message Center.</p>
+                                                                <form class="form-style">
+                                                                    <div class="form-group">
+                                                                        <label for="draft-subject" class="sr-only">Subject</label>
+                                                                        <input
+                                                                            type="text"
+                                                                            id="draft-subject"
+                                                                            class="form-control"
+                                                                            placeholder="Subject line"
+                                                                        />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="draft-message" class="sr-only">Message</label>
+                                                                        <textarea
+                                                                            id="draft-message"
+                                                                            class="form-control"
+                                                                            placeholder="Enter your message..."
+                                                                            rows="10"
+                                                                        ></textarea>
+                                                                    </div>
+                                                                </form>
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            <div class="modal-footer justify-content-between">
+                                                                <button type="button" class="btn btn-text to-previous">
+                                                                    <i class="icon far fa-chevron-left"></i>Back
+                                                                </button>
+                                                                <button type="button" class="btn btn-main to-message-center">
+                                                                    Finish in Message Center<i class="icon fas fa-long-arrow-right"></i>
+                                                                </button>
                                                             </div>
                                                         </div>
                                                     </div>
