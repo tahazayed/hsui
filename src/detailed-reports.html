@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="styles/project.css" />
         <!-- /End -->
 
-        <title>Biometric Heart Vitality - Test Reports - Mission Health</title>
+        <title>Biometric Heart Vitality - Detailed Reports - Mission Health</title>
 
         <!-- FontAwesome - It might be better to download the package instead of using this CDN -->
         <script src="https://kit.fontawesome.com/fbd365346d.js" crossorigin="anonymous"></script>
@@ -669,32 +669,64 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-row form-gutter-20">
-                                                    <div class="form-column col-lg">
+                                                    <div class="form-column col-lg-10">
                                                         <div class="form-group">
-                                                            <label for="company-address-1">Address 1</label>
+                                                            <label for="company-street">Street</label>
                                                             <input
                                                                 type="text"
-                                                                id="company-address-1"
+                                                                id="company-street"
                                                                 class="form-control"
                                                                 placeholder="Enter your street address"
                                                                 value="509 Biltmore Ave."
                                                             />
                                                         </div>
                                                     </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-unit">Unit</label>
+                                                            <input type="text" id="company-unit" class="form-control" placeholder="#" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="form-row form-gutter-20">
-                                                    <div class="form-column col-lg">
+                                                    <div class="form-column col-lg-4">
                                                         <div class="form-group">
-                                                            <label for="company-address-2">Address 2</label>
+                                                            <label for="company-city">City</label>
                                                             <input
                                                                 type="text"
-                                                                id="company-address-2"
+                                                                id="company-city"
                                                                 class="form-control"
-                                                                placeholder="Suite #, PO Box #, etc."
+                                                                placeholder="Enter city"
+                                                                value="Asheville"
                                                             />
                                                         </div>
                                                     </div>
-                                                    <div class="form-column col-lg">
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-state">State</label>
+                                                            <select id="company-state" class="custom-select">
+                                                                <option value="1" selected>NC</option>
+                                                                <option value="2">TX</option>
+                                                                <option value="3">WA</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="company-zipcode">Zip</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-zip"
+                                                                class="form-control"
+                                                                placeholder="Enter zip"
+                                                                value="28801"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-3">
                                                         <div class="form-group">
                                                             <label for="company-country">Country</label>
                                                             <select id="company-country" class="custom-select">
@@ -708,64 +740,20 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <hr class="form-break" />
                                                 <div class="form-row form-gutter-20">
                                                     <div class="form-column col-lg">
-                                                        <div class="form-row form-gutter-20">
-                                                            <div class="form-column col-lg">
-                                                                <div class="form-group">
-                                                                    <label for="company-city">City</label>
-                                                                    <input
-                                                                        type="text"
-                                                                        id="company-city"
-                                                                        class="form-control"
-                                                                        placeholder="Enter city"
-                                                                        value="Asheville"
-                                                                    />
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-column col-lg-3">
-                                                                <div class="form-group">
-                                                                    <label for="company-state">State</label>
-                                                                    <select id="company-state" class="custom-select">
-                                                                        <option value="1" selected>NC</option>
-                                                                        <option value="2">TX</option>
-                                                                        <option value="3">WA</option>
-                                                                    </select>
-                                                                    <div class="arrow d-flex align-items-center">
-                                                                        <i class="icon far fa-chevron-down" aria-hidden="true"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="form-group">
+                                                            <label for="company-contact-name">Contact Name</label>
+                                                            <input type="text" id="company-contact-name" class="form-control" placeholder="Admin" />
                                                         </div>
                                                     </div>
                                                     <div class="form-column col-lg">
                                                         <div class="form-group">
-                                                            <label for="company-zipcode">Zipcode</label>
+                                                            <label for="company-contact-title">Contact Title</label>
                                                             <input
                                                                 type="text"
-                                                                id="company-zipcode"
-                                                                class="form-control"
-                                                                placeholder="Enter zipcode"
-                                                                value="28801"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row form-gutter-20">
-                                                    <div class="form-column col-lg">
-                                                        <div class="form-group">
-                                                            <label for="company-person-name">Contact Person Name (Admin)</label>
-                                                            <input type="text" id="company-person-name" class="form-control" placeholder="Admin" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row form-gutter-20">
-                                                    <div class="form-column col-lg">
-                                                        <div class="form-group">
-                                                            <label for="company-title">Title</label>
-                                                            <input
-                                                                type="text"
-                                                                id="company-title"
+                                                                id="company-contact-title"
                                                                 class="form-control"
                                                                 placeholder="Admin"
                                                                 value="Head of Human Resources"
@@ -776,10 +764,10 @@
                                                 <div class="form-row form-gutter-20">
                                                     <div class="form-column col-lg">
                                                         <div class="form-group">
-                                                            <label for="company-email">Email</label>
+                                                            <label for="company-contact-email">Contact Email</label>
                                                             <input
                                                                 type="email"
-                                                                id="company-email"
+                                                                id="company-contact-email"
                                                                 class="form-control"
                                                                 placeholder="example@email.com"
                                                                 value="admin@missionhealth.com"
@@ -788,10 +776,10 @@
                                                     </div>
                                                     <div class="form-column col-lg">
                                                         <div class="form-group">
-                                                            <label for="company-phone">Phone</label>
+                                                            <label for="company-contact-phone">Contact Phone</label>
                                                             <input
                                                                 type="text"
-                                                                id="company-phone"
+                                                                id="company-contact-phone"
                                                                 class="form-control"
                                                                 placeholder="(555) 555-5555"
                                                                 value="(002) 120-1095"

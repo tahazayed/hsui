@@ -236,6 +236,11 @@
 .dashboard #offcanvas-main .form-style .form-row + .form-row {
     padding-top: 20px;
 }
+.dashboard #offcanvas-main .form-style .form-break {
+    border-top: 1px solid #474e60;
+    margin-top: 49px;
+    margin-bottom: 49px;
+}
 .dashboard #offcanvas-main .form-style textarea {
     resize: none;
 }
@@ -266,7 +271,7 @@
     color: #81818e !important;
 }
 .dashboard #offcanvas-main .form-style .custom-select + .arrow {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-top: 15px;
     padding-left: 15px;
     position: absolute;
@@ -301,7 +306,7 @@
     background-color: #474e60;
 }
 .dashboard #offcanvas-main #contact-message {
-    height: 226px;
+    height: 200px;
 }
 .dashboard #offcanvas-footer {
     border-top: 1px solid #474e60;
