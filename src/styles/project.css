@@ -154,11 +154,13 @@
 .form-style textarea {
     resize: none;
 }
-.form-style .form-control {
-    border-radius: 8px !important;
+.form-style .form-control,
+.form-style .custom-select {
     border-color: #eee;
+    border-radius: 8px !important;
     padding: 7px 14px;
     height: 40px;
+    position: relative;
     font-size: 20px;
     line-height: 30px;
     color: #353e4e;
@@ -388,7 +390,7 @@
 }
 .dashboard #offcanvas-main .form-style label + .form-control,
 .dashboard #offcanvas-main .form-style label + .custom-select {
-    margin-top: 8px;
+    margin-top: 9px;
 }
 .dashboard #offcanvas-main .form-style .form-group + .form-group {
     padding-top: 30px;
@@ -403,25 +405,22 @@
 }
 .dashboard #offcanvas-main .form-style .form-control,
 .dashboard #offcanvas-main .form-style .custom-select {
-    background-color: transparent;
-    border: 0 none transparent;
-    border-bottom: 2px solid #fff;
+    background-color: transparent !important;
+    border: 0 none transparent !important;
+    border-bottom: 2px solid #fff !important;
     border-radius: 0 !important;
-    padding: 0;
-    position: relative;
-    line-height: 30px;
-    font-size: 20px;
-    color: #ffc64e;
+    padding: 0 !important;
+    color: #ffc64e !important;
 }
 .dashboard #offcanvas-main .form-style .form-control:focus,
 .dashboard #offcanvas-main .form-style .custom-select:focus {
-    border-color: #fff;
-    color: #ffc64e;
-    box-shadow: none;
+    border-color: #fff !important;
+    color: #ffc64e !important;
+    box-shadow: none !important;
 }
 .dashboard #offcanvas-main .form-style .form-control::placeholder,
 .dashboard #offcanvas-main .form-style .custom-select::placeholder {
-    color: #81818e;
+    color: #81818e !important;
 }
 .dashboard #offcanvas-main .form-style .form-control[readonly],
 .dashboard #offcanvas-main .form-style .custom-select[readonly] {
