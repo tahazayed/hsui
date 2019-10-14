@@ -134,6 +134,12 @@
                         </div>
                     </div>
                     <!-- /Group -->
+
+                    <!-- Exit -->
+                    <a class="toolbar-link to-exit no-underline" href="/"
+                        ><i class="icon fas fa-sign-out-alt fa-flip-horizontal"></i>Return To Dashboard</a
+                    >
+                    <!-- /Exit -->
                 </div>
                 <!-- /Accordion -->
             </nav>
@@ -189,15 +195,27 @@
                                                                     </div>
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck1" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck1"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck1">MC-XXXX-XXX</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck2" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck2"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck2">MC-XXXX-XXX</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck3" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck3"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck3">MC-XXXX-XXX</label>
                                                                         </div>
                                                                     </div>
@@ -299,15 +317,27 @@
                                                                     </div>
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck11" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck11"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck11">Boston</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck12" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck12"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck12">Chicago</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck13" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck13"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck13">New York</label>
                                                                         </div>
                                                                     </div>
@@ -342,15 +372,27 @@
                                                                     </div>
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck111" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck111"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck111">Creative</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck112" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck112"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck112">Finance</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck113" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck113"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck113"
                                                                                 >Human Resources</label
                                                                             >
@@ -418,7 +460,7 @@
                                                                 </button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <h4 class="modal-title">Select Recipient(s)</h4>
+                                                                <h4 class="modal-title">Select Recipient</h4>
                                                                 <p>Please select specified groups for engagement email.</p>
                                                                 <div class="selection">
                                                                     <div class="row gutter-30">
@@ -759,7 +801,7 @@
                                                     <div class="form-column col-lg">
                                                         <div class="form-group">
                                                             <label for="company-industry">Industry</label>
-                                                            <select id="company-industry" class="custom-select">
+                                                            <select id="company-industry" class="custom-select" readonly>
                                                                 <option value="1" selected>Medical</option>
                                                                 <option value="2">Real Estate</option>
                                                                 <option value="3">Retail</option>
@@ -780,13 +822,14 @@
                                                                 class="form-control"
                                                                 placeholder="Enter your street address"
                                                                 value="509 Biltmore Ave."
+                                                                readonly
                                                             />
                                                         </div>
                                                     </div>
                                                     <div class="form-column col-lg-2">
                                                         <div class="form-group">
                                                             <label for="company-unit">Unit</label>
-                                                            <input type="text" id="company-unit" class="form-control" placeholder="#" />
+                                                            <input type="text" id="company-unit" class="form-control" placeholder="#" readonly />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -800,13 +843,14 @@
                                                                 class="form-control"
                                                                 placeholder="Enter city"
                                                                 value="Asheville"
+                                                                readonly
                                                             />
                                                         </div>
                                                     </div>
                                                     <div class="form-column col-lg-2">
                                                         <div class="form-group">
                                                             <label for="company-state">State</label>
-                                                            <select id="company-state" class="custom-select">
+                                                            <select id="company-state" class="custom-select" readonly>
                                                                 <option value="1" selected>NC</option>
                                                                 <option value="2">TX</option>
                                                                 <option value="3">WA</option>
@@ -825,13 +869,14 @@
                                                                 class="form-control"
                                                                 placeholder="Enter zip"
                                                                 value="28801"
+                                                                readonly
                                                             />
                                                         </div>
                                                     </div>
                                                     <div class="form-column col-lg-4">
                                                         <div class="form-group">
                                                             <label for="company-country">Country</label>
-                                                            <select id="company-country" class="custom-select">
+                                                            <select id="company-country" class="custom-select" readonly>
                                                                 <option value="1" selected>United States</option>
                                                                 <option value="2">Venezuela</option>
                                                                 <option value="3">Wales</option>
@@ -847,7 +892,13 @@
                                                     <div class="form-column col-lg">
                                                         <div class="form-group">
                                                             <label for="company-contact-name">Contact Name</label>
-                                                            <input type="text" id="company-contact-name" class="form-control" placeholder="Admin" />
+                                                            <input
+                                                                type="text"
+                                                                id="company-contact-name"
+                                                                class="form-control"
+                                                                placeholder="Admin"
+                                                                readonly
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div class="form-column col-lg">
@@ -859,6 +910,7 @@
                                                                 class="form-control"
                                                                 placeholder="Admin"
                                                                 value="Head of Human Resources"
+                                                                readonly
                                                             />
                                                         </div>
                                                     </div>
@@ -873,6 +925,7 @@
                                                                 class="form-control"
                                                                 placeholder="example@email.com"
                                                                 value="admin@missionhealth.com"
+                                                                readonly
                                                             />
                                                         </div>
                                                     </div>
@@ -885,13 +938,10 @@
                                                                 class="form-control"
                                                                 placeholder="(555) 555-5555"
                                                                 value="(002) 120-1095"
+                                                                readonly
                                                             />
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="form-group d-flex justify-content-end">
-                                                    <button type="button" class="btn btn-text do-cancel">Cancel</button>
-                                                    <button type="submit" class="btn btn-text do-save">Save</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -918,7 +968,6 @@
                         >
                         &ndash; 10123 Carroll Canyon Road, San Diego, CA 92131 &ndash; 800-908-5603
                     </p>
-                    <a class="navbar-link to-dashboard" href="#" role="button">Return To Main Dashboard<i class="icon fas fa-sign-out-alt"></i></a>
                 </div>
             </footer>
             <!-- /Footer -->
@@ -943,8 +992,8 @@
         ></script>
         <script src="scripts/offcanvas.pkgd.min.js"></script>
         <script>
-            $(document).ready(function () {
-                var toggleAffix = function (affixElement, scrollElement, wrapper) {
+            $(document).ready(function() {
+                var toggleAffix = function(affixElement, scrollElement, wrapper) {
                     var height = affixElement.outerHeight(),
                         top = wrapper.offset().top;
                     if (scrollElement.scrollTop() >= top) {
@@ -955,16 +1004,16 @@
                         wrapper.height('auto');
                     }
                 };
-                $('[data-toggle="affix"]').each(function () {
+                $('[data-toggle="affix"]').each(function() {
                     var ele = $(this),
                         wrapper = $('<div></div>');
                     ele.before(wrapper);
-                    $(window).on('scroll resize', function () {
+                    $(window).on('scroll resize', function() {
                         toggleAffix(ele, $(this), wrapper);
                     });
                     toggleAffix(ele, $(window), wrapper);
                 });
-                $('.scroll a[href^="#"]').click(function () {
+                $('.scroll a[href^="#"]').click(function() {
                     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                         target = $(this.hash);
                         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -984,34 +1033,32 @@
                     modifiers: 'right, push', // default options
                     triggerButton: '#triggerButton', // btn to open offcanvas
                 });
-                $('#offCanvasClose').click(function () {
+                $('#offCanvasClose').click(function() {
                     $('#offCanvas')
                         .data('offcanvas-component')
                         .close();
                 });
 
-                $('.dropdown-menu.keep-open').on('click', function (e) {
+                $('.dropdown-menu.keep-open').on('click', function(e) {
                     e.stopPropagation();
                 });
 
-                $('.all').on('change', function (e) {
-                   var childs = this.parentElement.parentElement.nextElementSibling.children;
+                $('.all').on('change', function(e) {
+                    var childs = this.parentElement.parentElement.nextElementSibling.children;
 
                     if (this.checked) {
                         for (let child of childs) {
-                            if (child.children[0].checked)
-                                child.children[0].checked = false;
+                            if (child.children[0].checked) child.children[0].checked = false;
                         }
                     }
                 });
 
-                $('.others').on('change', function (e) {
-                   var childs = this.parentElement.parentElement.previousElementSibling.children;
+                $('.others').on('change', function(e) {
+                    var childs = this.parentElement.parentElement.previousElementSibling.children;
 
                     if (this.checked) {
                         for (let child of childs) {
-                            if (child.children[0].checked)
-                                child.children[0].checked = false;
+                            if (child.children[0].checked) child.children[0].checked = false;
                         }
                     }
                 });
