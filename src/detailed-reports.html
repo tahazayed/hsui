@@ -173,7 +173,7 @@
                                                                 >
                                                                     All Test Orders
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
                                                                             <input
@@ -216,7 +216,7 @@
                                                                 >
                                                                     All Dates<i class="icon far fa-calendar-alt"></i>
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         Calendar
                                                                     </div>
@@ -235,7 +235,7 @@
                                                                 >
                                                                     All Roles
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-radio">
                                                                             <input
@@ -283,7 +283,7 @@
                                                                 >
                                                                     All Locations
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
                                                                             <input
@@ -326,7 +326,7 @@
                                                                 >
                                                                     All Departments
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
                                                                             <input
@@ -869,8 +869,8 @@
         ></script>
         <script src="scripts/offcanvas.pkgd.min.js"></script>
         <script>
-            $(document).ready(function() {
-                var toggleAffix = function(affixElement, scrollElement, wrapper) {
+            $(document).ready(function () {
+                var toggleAffix = function (affixElement, scrollElement, wrapper) {
                     var height = affixElement.outerHeight(),
                         top = wrapper.offset().top;
                     if (scrollElement.scrollTop() >= top) {
@@ -881,16 +881,16 @@
                         wrapper.height('auto');
                     }
                 };
-                $('[data-toggle="affix"]').each(function() {
+                $('[data-toggle="affix"]').each(function () {
                     var ele = $(this),
                         wrapper = $('<div></div>');
                     ele.before(wrapper);
-                    $(window).on('scroll resize', function() {
+                    $(window).on('scroll resize', function () {
                         toggleAffix(ele, $(this), wrapper);
                     });
                     toggleAffix(ele, $(window), wrapper);
                 });
-                $('.scroll a[href^="#"]').click(function() {
+                $('.scroll a[href^="#"]').click(function () {
                     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                         target = $(this.hash);
                         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -910,10 +910,14 @@
                     modifiers: 'right, push', // default options
                     triggerButton: '#triggerButton', // btn to open offcanvas
                 });
-                $('#offCanvasClose').click(function() {
+                $('#offCanvasClose').click(function () {
                     $('#offCanvas')
                         .data('offcanvas-component')
                         .close();
+                });
+
+                $('.dropdown-menu.keep-open').on('click', function (e) {
+                    e.stopPropagation();
                 });
             });
         </script>
