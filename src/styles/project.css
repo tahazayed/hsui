@@ -112,6 +112,13 @@
     font-size: 16px;
     font-weight: 700;
 }
+.selection .selection-footer .selection-footer-text + .btn-text {
+    margin-left: 5px;
+}
+.selection .selection-footer .selection-footer-text + .btn-main {
+    margin-top: 0 !important;
+    margin-left: 20px;
+}
 .selection .selection-footer .btn-text {
     margin: -30px -15px;
     font-size: 16px;
@@ -177,6 +184,11 @@
     margin: -5px -2px -5px;
     line-height: 22px;
     font-size: 16px;
+}
+.selection .selection-option .selection-option-action > .icon {
+    line-height: 40px;
+    font-size: 27px;
+    color: #3fbb92;
 }
 .selection-create-test-order .panel {
     padding: 50px;
@@ -264,7 +276,7 @@
     padding-top: 10px;
 }
 .modal .modal-dialog {
-    max-width: 890px;
+    max-width: 900px;
     height: 100vh;
 }
 .modal .modal-dialog .modal-content {
@@ -316,6 +328,13 @@
 .modal .modal-dialog .modal-content .modal-footer .modal-footer-text {
     font-size: 16px;
     font-weight: 700;
+}
+.modal .modal-dialog .modal-content .modal-footer .modal-footer-text + .btn-text {
+    margin-left: 5px;
+}
+.modal .modal-dialog .modal-content .modal-footer .modal-footer-text + .btn-main {
+    margin-top: 0 !important;
+    margin-left: 20px;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn-text {
     margin: -30px -15px;
@@ -837,6 +856,10 @@
     text-align: center;
     display: block;
 }
+.panel .panel-content img + h4,
+.panel .panel-action {
+    padding-top: 30px;
+}
 .panel .panel-section {
     padding: 30px;
 }
@@ -930,6 +953,9 @@
 .dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-label::before {
     background-color: #fff;
     border-color: #353e4e;
+}
+.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
 }
 .dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
