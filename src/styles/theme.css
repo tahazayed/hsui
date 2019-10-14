@@ -1905,8 +1905,7 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
 }
 @media (min-width: 992px) {
     h3 {
@@ -1916,7 +1915,6 @@ h3 {
     }
 }
 h4 {
-    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
 }
 ol:not([class*='list-reset']):not([class*='row']):not([class*='nav']):not([class*='navbar-nav']):not([class*='dropdown-menu']):not([class*='pagination']):not([class*='carousel-indicators']),
