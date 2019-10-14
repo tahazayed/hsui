@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Use these required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- /End -->
+
+        <!-- Use the minimized version of Bootstrap CSS (bootstrap.min.css) either from package or this CDN above/before any other CSS file -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- /End -->
+
+        <!-- Add these stylsheets in this order AFTER/BELOW Bootstrap -->
+        <link rel="stylesheet" href="styles/offcanvas.css" />
+        <link rel="stylesheet" href="styles/theme.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <!-- /End -->
+
+        <title>Order History - Test Orders - Mission Health</title>
+
+        <!-- FontAwesome - It might be better to download the package instead of using this CDN -->
+        <script src="https://kit.fontawesome.com/fbd365346d.js" crossorigin="anonymous"></script>
+        <!-- /End -->
+    </head>
+
+    <body id="body" class="dashboard" data-spy="scroll" data-target="#menu-contextual" data-offset="120">
+        <!-- Wrapper -->
+        <div class="c-offcanvas-content-wrap">
+            <!-- Header -->
+            <header id="header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
+                <div class="container-fluid">
+                    <a id="triggerButton" class="navbar-menu navbar-toggler btn ml-auto" href="#offCanvas"><i class="icon fas fa-user-circle"></i></a>
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Toolbar -->
+            <nav id="toolbar" class="d-none d-lg-block">
+                <!-- Logo -->
+                <a class="toolbar-brand" title="Mission Health" rel="home" href="/">Mission Health</a>
+                <!-- /Logo -->
+
+                <!-- Accordion -->
+                <div id="accordion" class="accordion toolbar-nav">
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-1" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-1"
+                                aria-expanded="false"
+                                aria-controls="collapse-1"
+                            >
+                                Detailed Reports
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-1" class="card-collapse collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Biometric Heart Vitality</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Stress Hormone Plus</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Workplace Questionnaire Results</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Results Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-2" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-2"
+                                aria-expanded="false"
+                                aria-controls="collapse-2"
+                            >
+                                Test Orders
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-2" class="card-collapse collapse" aria-labelledby="heading-2" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Create Test Order</a></li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center active" href="#">Order History</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Individual Order Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-3" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-3"
+                                aria-expanded="false"
+                                aria-controls="collapse-3"
+                            >
+                                Resources
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-3" class="card-collapse collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+                </div>
+                <!-- /Accordion -->
+            </nav>
+            <!-- /Toolbar -->
+
+            <!-- Main -->
+            <main id="main" role="main">
+                <div class="container-fluid">
+                    <section class="basic block height-auto align-left background-none color-0">
+                        <div class="zone relative space-xs-50 space-lg-80 tint-none">
+                            <div class="container-fluid">
+                                <div class="row gutter-80">
+                                    <div class="col-lg">
+                                        <!-- Title -->
+                                        <header class="node-xs-50">
+                                            <h2>Test Orders</h2>
+                                            <h1>Order History</h1>
+                                        </header>
+                                        <!-- /Title -->
+
+                                        <!-- Filter -->
+                                        <aside class="node-xs-50">
+                                            <form id="filters" class="panel">
+                                                <span class="panel-label">Filters</span>
+                                                <!-- Section -->
+                                                <div class="panel-section">
+                                                    <div class="form-row gutter-10">
+                                                        <div class="col-12 col-xl-4 col-hg">
+                                                            <div class="filter-test-types filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Test Types
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio10"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio10"
+                                                                                >All Test Types</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio11"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio11"
+                                                                                >Sleep And Stress</label
+                                                                            >
+                                                                        </div>
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio12"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio12"
+                                                                                >Core Biometric Tests</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-xl-4 col-hg">
+                                                            <div class="filter-dates filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle no-caret"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Dates<i class="icon far fa-calendar-alt"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        Calendar
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-xl-4 col-hg">
+                                                            <div class="filter-roles filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Roles
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio0"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio0">All Roles</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio1"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio1">Supervisor</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input
+                                                                                type="radio"
+                                                                                id="customRadio2"
+                                                                                name="customRadio"
+                                                                                class="custom-control-input"
+                                                                            />
+                                                                            <label class="custom-control-label" for="customRadio2">Employee</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-xl-4 col-hg">
+                                                            <div class="filter-locations filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Locations
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck10"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customCheck10"
+                                                                                >All Locations</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck11" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck11">Boston</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck12" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck12">Chicago</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck13" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck13">New York</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-xl-4 col-hg">
+                                                            <div class="filter-departments filter dropdown">
+                                                                <button
+                                                                    type="button"
+                                                                    id="dropdownMenuButton"
+                                                                    class="btn btn-filter dropdown-toggle"
+                                                                    data-toggle="dropdown"
+                                                                    aria-haspopup="true"
+                                                                    aria-expanded="false"
+                                                                >
+                                                                    All Departments
+                                                                </button>
+                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck110"
+                                                                                class="custom-control-input"
+                                                                                checked
+                                                                            />
+                                                                            <label class="custom-control-label" for="customCheck110"
+                                                                                >All Departments</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-menu-node">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck111" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck111">Creative</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck112" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck112">Finance</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="customCheck113" class="custom-control-input" />
+                                                                            <label class="custom-control-label" for="customCheck113"
+                                                                                >Human Resources</label
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-action d-flex justify-content-between justify-content-lg-end">
+                                                        <span class="panel-button do-reset">Reset</span>
+                                                        <span class="panel-button">Apply Filters</span>
+                                                    </div>
+                                                </div>
+                                                <!-- /Section -->
+                                            </form>
+                                        </aside>
+                                        <!-- /Filter -->
+
+                                        <!-- Content -->
+                                        <section class="node-xs-50">
+                                            <!-- Tags -->
+                                            <aside id="tags">
+                                                <span class="tag-test-orders tag">Test MC-XXXX-XX</span>
+                                                <span class="tag-test-orders tag">Test MC-XXXX-XX</span>
+                                                <span class="tag-test-orders tag">Test MC-XXXX-XX</span>
+                                                <span class="tag-dates tag">OCT 4, 2019 - NOV 7, 2019</span>
+                                                <span class="tag-roles tag">Supervisor</span>
+                                                <span class="tag-locations tag">Boston</span>
+                                                <span class="tag-locations tag">Chicago</span>
+                                                <span class="tag-locations tag">New York</span>
+                                                <span class="tag-departments tag">Creative</span>
+                                                <span class="tag-departments tag">Finance</span>
+                                            </aside>
+                                            <!-- /Tags -->
+
+                                            <!-- Table -->
+                                            <div class="table-wrapper table-style">
+                                                <div class="panel">
+                                                    <div class="table-responsive-lg">
+                                                        <table id="testOrders" class="table table-bordered table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Order Number</th>
+                                                                    <th>Tests</th>
+                                                                    <th>Request Date</th>
+                                                                    <th>Kits Count</th>
+                                                                    <th>Locations/Departments</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        MC-20191010-F347
+                                                                    </td>
+                                                                    <td>
+                                                                        Blood Cholesterol <br />
+                                                                        Blood Glucose <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        10/10/2019
+                                                                    </td>
+                                                                    <td>
+                                                                        26
+                                                                    </td>
+                                                                    <td>
+                                                                        Locations : Chicago, New York <br />
+                                                                        Departments : Quality <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="btn-group">
+                                                                            <a
+                                                                                class="btn btn-action"
+                                                                                href="#"
+                                                                                role="button"
+                                                                                id="dropdownMenuLink"
+                                                                                data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false"
+                                                                                >...</a
+                                                                            >
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderingFlowStatusReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Status</a
+                                                                                >
+                                                                                <a class="dropdown-item dropdown-item-text" href=""
+                                                                                    >Detailed Report</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderPlacedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Placed</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderShippedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Shipped</a
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        MC-20191003-DFF4
+                                                                    </td>
+                                                                    <td>
+                                                                        Sleep And Stress <br />
+                                                                        Blood Glucose <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        10/03/2019
+                                                                    </td>
+                                                                    <td>
+                                                                        168
+                                                                    </td>
+                                                                    <td>
+                                                                        Locations : Chicago, New York, Washington DC <br />
+                                                                        Departments : Development, Finance, Human Resources, Quality <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="btn-group">
+                                                                            <a
+                                                                                class="btn btn-action"
+                                                                                href="#"
+                                                                                role="button"
+                                                                                id="dropdownMenuLink"
+                                                                                data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false"
+                                                                                >...</a
+                                                                            >
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderingFlowStatusReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Status</a
+                                                                                >
+                                                                                <a class="dropdown-item dropdown-item-text" href=""
+                                                                                    >Detailed Report</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderPlacedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Placed</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderShippedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Shipped</a
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        MC-20191003-B254
+                                                                    </td>
+                                                                    <td>Blood Glucose <br /></td>
+                                                                    <td>
+                                                                        10/03/2019
+                                                                    </td>
+                                                                    <td>
+                                                                        124
+                                                                    </td>
+                                                                    <td>
+                                                                        Locations : Chicago <br />
+                                                                        Departments : Finance, UX <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="btn-group">
+                                                                            <a
+                                                                                class="btn btn-action"
+                                                                                href="#"
+                                                                                role="button"
+                                                                                id="dropdownMenuLink"
+                                                                                data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false"
+                                                                                >...</a
+                                                                            >
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderingFlowStatusReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Status</a
+                                                                                >
+                                                                                <a class="dropdown-item dropdown-item-text" href=""
+                                                                                    >Detailed Report</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderPlacedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Placed</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderShippedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Shipped</a
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        MC-20191003-0E90
+                                                                    </td>
+                                                                    <td>
+                                                                        Blood Cholesterol <br />
+                                                                        Triglycerides <br />
+                                                                        Body Mass Index <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        10/03/2019
+                                                                    </td>
+                                                                    <td>
+                                                                        387
+                                                                    </td>
+                                                                    <td>
+                                                                        Locations : Chicago <br />
+                                                                        Departments : Finance, Human Resources, Quality, UX <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="btn-group">
+                                                                            <a
+                                                                                class="btn btn-action"
+                                                                                href="#"
+                                                                                role="button"
+                                                                                id="dropdownMenuLink"
+                                                                                data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false"
+                                                                                >...</a
+                                                                            >
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderingFlowStatusReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Status</a
+                                                                                >
+                                                                                <a class="dropdown-item dropdown-item-text" href=""
+                                                                                    >Detailed Report</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderPlacedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Placed</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderShippedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Shipped</a
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        MC-20191003-8856
+                                                                    </td>
+                                                                    <td>Sleep And Stress <br /></td>
+                                                                    <td>
+                                                                        10/03/2019
+                                                                    </td>
+                                                                    <td>
+                                                                        77
+                                                                    </td>
+                                                                    <td>
+                                                                        Locations : New York, San Diego, Washington DC <br />
+                                                                        Departments : Development, Finance, Human Resources <br />
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="btn-group">
+                                                                            <a
+                                                                                class="btn btn-action"
+                                                                                href="#"
+                                                                                role="button"
+                                                                                id="dropdownMenuLink"
+                                                                                data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false"
+                                                                                >...</a
+                                                                            >
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderingFlowStatusReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Status</a
+                                                                                >
+                                                                                <a class="dropdown-item dropdown-item-text" href=""
+                                                                                    >Detailed Report</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderPlacedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Placed</a
+                                                                                >
+                                                                                <a
+                                                                                    class="dropdown-item dropdown-item-text"
+                                                                                    href="/TestOrder/OrderShippedReport/e4b54e03-0812-4de2-b451-d6205ed9bc6b"
+                                                                                    >Order Shipped</a
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Control -->
+                                                <div class="table-control d-flex align-items-center justify-content-between">
+                                                    <span class="table-showing">Showing 1 to 5 of 5 entries</span>
+                                                    <div id="testOrders_length">
+                                                        <label class="d-inline-block">
+                                                            Show
+                                                            <select
+                                                                class="form-control form-control-sm d-inline-block w-auto"
+                                                                onchange="pageItemClick(0, 'Page')"
+                                                                data-val="true"
+                                                                data-val-required="The PageSize field is required."
+                                                                id="PageSize"
+                                                                name="PageSize"
+                                                            >
+                                                                <option selected="selected" value="10">10</option>
+                                                                <option value="25">25</option>
+                                                                <option value="50">50</option>
+                                                                <option value="100">100</option>
+                                                            </select>
+                                                            entries
+                                                            <input type="hidden" id="Page" name="Page" value="0" />
+                                                        </label>
+                                                    </div>
+                                                    <nav aria-label="Page navigation">
+                                                        <ul class="pagination justify-content-end">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" onclick="pageItemClick(0, 'Page')" aria-label="Previous">
+                                                                    <span aria-hidden="true">First</span>
+                                                                    <span class="sr-only">First</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" onclick="pageItemClick(0, 'Page')" aria-label="Previous">
+                                                                    <span aria-hidden="true">«</span>
+                                                                    <span class="sr-only">Previous</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="page-item active">
+                                                                <a class="page-link" href="javascript:">1 <span class="sr-only">(current)</span></a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" onclick="pageItemClick(0, 'Page')" aria-label="Next">
+                                                                    <span aria-hidden="true">»</span>
+                                                                    <span class="sr-only">Next</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" onclick="pageItemClick(0, 'Page')" aria-label="Previous">
+                                                                    <span aria-hidden="true">Last</span>
+                                                                    <span class="sr-only">Last</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <!-- Control -->
+                                            </div>
+                                            <!-- /Table -->
+                                        </section>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- /Main -->
+
+            <!-- Footer -->
+            <footer id="footer" class="navbar navbar-expand-lg navbar-fixed-bottom bottom" role="contentinfo">
+                <div class="container-fluid">
+                    <p class="copyright navbar-text"><a class="navbar-link" title="Mission Health" rel="home" href="#">Mission Health</a> © 2019</p>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </div>
+        <!-- /Wrapper -->
+
+        <!-- Offcanvas -->
+        <aside id="offCanvas">
+            <!-- Header -->
+            <header id="offcanvas-header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" title="Mission Health" rel="home" href="/"><i class="icon fas fa-user-circle"></i>Mission Health</a>
+                    <!-- /Logo -->
+
+                    <!-- Close -->
+                    <button type="button" id="offCanvasClose" class="btn btn-link btn-close ml-auto">
+                        <i class="icon fas fa-times"></i>
+                    </button>
+                    <!-- /Close -->
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Main -->
+            <main id="offcanvas-main" role="main">
+                <div class="container-fluid">
+                    <section class="basic block height-auto align-left background-none color-0">
+                        <div class="zone relative space-xs-50 space-lg-80 tint-none">
+                            <div class="container-fluid">
+                                <div class="row gutter-80">
+                                    <div class="col-xl">
+                                        <div class="case">
+                                            <h4>Contact Your Account Manager</h4>
+                                            <form class="form-style">
+                                                <div class="form-group">
+                                                    <label for="contact-name">Name</label>
+                                                    <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-title">Title</label>
+                                                    <input type="text" id="contact-title" class="form-control" placeholder="Enter your job title" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-email">Email</label>
+                                                    <input type="email" id="contact-email" class="form-control" placeholder="example@email.com" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-topic">Topic</label>
+                                                    <select id="contact-topic" class="custom-select">
+                                                        <option value="1" selected>General</option>
+                                                        <option value="2">Technical</option>
+                                                        <option value="3">Data</option>
+                                                    </select>
+                                                    <div class="arrow d-flex align-items-center">
+                                                        <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-message">Message</label>
+                                                    <textarea
+                                                        id="contact-message"
+                                                        class="form-control"
+                                                        placeholder="Enter your message..."
+                                                    ></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-main">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl">
+                                        <div class="base">
+                                            <h4>Company Information</h4>
+                                            <form class="form-style">
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-name">Company Name</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-name"
+                                                                class="form-control"
+                                                                value="Mission Health"
+                                                                readonly
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-subscription-level">Subscription Level</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-subscription-level"
+                                                                class="form-control"
+                                                                value="Pilot"
+                                                                readonly
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-industry">Industry</label>
+                                                            <select id="company-industry" class="custom-select">
+                                                                <option value="1" selected>Medical</option>
+                                                                <option value="2">Real Estate</option>
+                                                                <option value="3">Retail</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg-10">
+                                                        <div class="form-group">
+                                                            <label for="company-street">Street</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-street"
+                                                                class="form-control"
+                                                                placeholder="Enter your street address"
+                                                                value="509 Biltmore Ave."
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-unit">Unit</label>
+                                                            <input type="text" id="company-unit" class="form-control" placeholder="#" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="company-city">City</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-city"
+                                                                class="form-control"
+                                                                placeholder="Enter city"
+                                                                value="Asheville"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-state">State</label>
+                                                            <select id="company-state" class="custom-select">
+                                                                <option value="1" selected>NC</option>
+                                                                <option value="2">TX</option>
+                                                                <option value="3">WA</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-zip">Zip</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-zip"
+                                                                class="form-control"
+                                                                placeholder="Enter zip"
+                                                                value="28801"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="company-country">Country</label>
+                                                            <select id="company-country" class="custom-select">
+                                                                <option value="1" selected>United States</option>
+                                                                <option value="2">Venezuela</option>
+                                                                <option value="3">Wales</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="form-break" />
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-name">Contact Name</label>
+                                                            <input type="text" id="company-contact-name" class="form-control" placeholder="Admin" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-title">Contact Title</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-contact-title"
+                                                                class="form-control"
+                                                                placeholder="Admin"
+                                                                value="Head of Human Resources"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-email">Contact Email</label>
+                                                            <input
+                                                                type="email"
+                                                                id="company-contact-email"
+                                                                class="form-control"
+                                                                placeholder="example@email.com"
+                                                                value="admin@missionhealth.com"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-phone">Contact Phone</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-contact-phone"
+                                                                class="form-control"
+                                                                placeholder="(555) 555-5555"
+                                                                value="(002) 120-1095"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-text do-cancel">Cancel</button>
+                                                    <button type="submit" class="btn btn-text do-save">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- /Main -->
+
+            <!-- Footer -->
+            <footer id="offcanvas-footer" class="navbar navbar-expand-lg" role="contentinfo">
+                <div class="container-fluid">
+                    <p class="navbar-text to-company">
+                        <a
+                            class="navbar-link"
+                            title="Confirm BioSciences"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.confirmbiosciences.com/"
+                            >Confirm BioSciences</a
+                        >
+                        &ndash; 10123 Carroll Canyon Road, San Diego, CA 92131 &ndash; 800-908-5603
+                    </p>
+                    <a class="navbar-link to-dashboard" href="#" role="button">Return To Main Dashboard<i class="icon fas fa-sign-out-alt"></i></a>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </aside>
+        <!-- /Offcanvas -->
+
+        <!-- Use jQuery first, then Popper.js, then Bootstrap JS, and then all other custom UI scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="scripts/offcanvas.pkgd.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var toggleAffix = function(affixElement, scrollElement, wrapper) {
+                    var height = affixElement.outerHeight(),
+                        top = wrapper.offset().top;
+                    if (scrollElement.scrollTop() >= top) {
+                        wrapper.height(height);
+                        affixElement.addClass('affix');
+                    } else {
+                        affixElement.removeClass('affix');
+                        wrapper.height('auto');
+                    }
+                };
+                $('[data-toggle="affix"]').each(function() {
+                    var ele = $(this),
+                        wrapper = $('<div></div>');
+                    ele.before(wrapper);
+                    $(window).on('scroll resize', function() {
+                        toggleAffix(ele, $(this), wrapper);
+                    });
+                    toggleAffix(ele, $(window), wrapper);
+                });
+                $('.scroll a[href^="#"]').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                        if (target.length) {
+                            $('html, body').animate(
+                                {
+                                    scrollTop: target.offset().top - $('#header').height() - 35,
+                                },
+                                500,
+                            );
+                            return false;
+                        }
+                    }
+                });
+                $('#offCanvas').offcanvas({
+                    modifiers: 'right, push', // default options
+                    triggerButton: '#triggerButton', // btn to open offcanvas
+                });
+                $('#offCanvasClose').click(function() {
+                    $('#offCanvas')
+                        .data('offcanvas-component')
+                        .close();
+                });
+            });
+        </script>
+        <!-- /End -->
+    </body>
+</html>

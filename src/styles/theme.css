@@ -313,9 +313,6 @@ textarea:focus {
 .table > tbody > tr > th {
     font-weight: 300;
 }
-.table > tbody > tr > td:first-child {
-    width: 37%;
-}
 .table-borderless {
     margin: -18px -15px -17px !important;
 }
@@ -376,7 +373,7 @@ textarea:focus {
     border-bottom-width: 1px;
 }
 .table-style tbody tr:nth-of-type(odd) {
-    background-color: #f8f8f8;
+    background-color: #fafafa;
 }
 .table-size-80 td,
 .table-size-80 th {

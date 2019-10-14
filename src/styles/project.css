@@ -151,6 +151,68 @@
     line-height: 22px;
     font-size: 16px;
 }
+.table-style,
+.table-style td,
+.table-style th,
+.table-style thead th,
+.table-style > .table-control .page-link {
+    border-color: #eee;
+}
+.table-style thead th {
+    font-weight: 400;
+}
+.table-style .panel {
+    overflow: hidden;
+}
+.table-style .btn-action {
+    border: 0 none transparent !important ;
+    margin-top: -10px !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+    color: #353e4e !important;
+}
+.table-style .table {
+    margin: -1px;
+    width: calc(100% + 2px);
+}
+.table-style > .table-control {
+    padding-top: 30px;
+}
+.table-style > .table-control,
+.table-style > .table-control label,
+.table-style > .table-control .page-link {
+    font-size: 16px;
+}
+.table-style > .table-control .page-link:active,
+.table-style > .table-control .page-link:focus,
+.table-style > .table-control .page-link:hover {
+    background-color: #fafafa !important;
+    border-color: #eee !important;
+    color: #353e4e !important;
+}
+.table-style > .table-control .page-item:first-child .page-link {
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+.table-style > .table-control .page-item:last-child .page-link {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.table-style > .table-control .page-item.disabled .page-link {
+    color: #eee;
+}
+.table-style > .table-control .page-item.active .page-link {
+    background-color: #3fbb92 !important;
+    border-color: #3fbb92 !important;
+    color: #fff !important;
+}
+.table-style > .table-control label,
+.table-style > .table-control .table-showing {
+    font-weight: 400;
+}
+.table-style > .table-control select {
+    margin: 0 5px;
+}
 .form-style textarea {
     resize: none;
 }
@@ -814,7 +876,9 @@
     border-radius: 2px !important;
 }
 .dashboard #filters .filter-test-orders > .dropdown-toggle,
-.dashboard #filters .filter-test-orders > .dropdown-menu {
+.dashboard #filters .filter-test-orders > .dropdown-menu,
+.dashboard #filters .filter-test-types > .dropdown-toggle,
+.dashboard #filters .filter-test-types > .dropdown-menu {
     border-color: rgba(255, 198, 78, 0.2);
 }
 .dashboard #filters .filter-dates > .dropdown-toggle,
@@ -839,6 +903,10 @@
 }
 .dashboard #tags + .report {
     margin-top: 44px;
+}
+.dashboard #tags + .table-wrapper,
+.dashboard #tags + .table {
+    margin-top: 50px;
 }
 .dashboard #tags .tag {
     border-width: 2px;
