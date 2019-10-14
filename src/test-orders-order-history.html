@@ -173,7 +173,7 @@
                                                                 >
                                                                     All Test Types
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-radio">
                                                                             <input
@@ -227,7 +227,7 @@
                                                                 >
                                                                     All Dates<i class="icon far fa-calendar-alt"></i>
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         Calendar
                                                                     </div>
@@ -246,7 +246,7 @@
                                                                 >
                                                                     All Roles
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-radio">
                                                                             <input
@@ -294,7 +294,7 @@
                                                                 >
                                                                     All Locations
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
                                                                             <input
@@ -337,7 +337,7 @@
                                                                 >
                                                                     All Departments
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
                                                                             <input
@@ -1087,6 +1087,10 @@
                     $('#offCanvas')
                         .data('offcanvas-component')
                         .close();
+                });
+                
+                $('.dropdown-menu.keep-open').on('click', function (e) {
+                    e.stopPropagation();
                 });
             });
         </script>
