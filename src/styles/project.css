@@ -456,9 +456,6 @@
         padding: 80px;
     }
 }
-.dashboard #offcanvas-main .case h4 {
-    color: #3fbb92;
-}
 .dashboard #offcanvas-main .case .form-style .custom-select + .arrow {
     background-color: #474e60;
 }
