@@ -27,21 +27,21 @@
             <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                 <div class="dropdown-menu-node">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" id="customCheck0" class="custom-control-input" />
+                        <input type="checkbox" id="customCheck0" class="custom-control-input all" />
                         <label class="custom-control-label" for="customCheck0">All Test Orders</label>
                     </div>
                 </div>
                 <div class="dropdown-menu-node">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" id="customCheck1" class="custom-control-input" />
+                        <input type="checkbox" id="customCheck1" class="custom-control-input others" />
                         <label class="custom-control-label" for="customCheck1">MC-XXXX-XXX</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" id="customCheck2" class="custom-control-input" />
+                        <input type="checkbox" id="customCheck2" class="custom-control-input others" />
                         <label class="custom-control-label" for="customCheck2">MC-XXXX-XXX</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" id="customCheck3" class="custom-control-input" />
+                        <input type="checkbox" id="customCheck3" class="custom-control-input others" />
                         <label class="custom-control-label" for="customCheck3">MC-XXXX-XXX</label>
                     </div>
                 </div>
@@ -60,6 +60,28 @@
             $(document).ready(function() {
                 $('.dropdown-menu.keep-open').on('click', function (e) {
                     e.stopPropagation();
+                });
+
+                $('.all').on('change', function (e) {
+                   var childs = this.parentElement.parentElement.nextElementSibling.children;
+
+                    if (this.checked) {
+                        for (let child of childs) {
+                            if (child.children[0].checked)
+                                child.children[0].checked = false;
+                        }
+                    }
+                });
+
+                $('.others').on('change', function (e) {
+                   var childs = this.parentElement.parentElement.previousElementSibling.children;
+
+                    if (this.checked) {
+                        for (let child of childs) {
+                            if (child.children[0].checked)
+                                child.children[0].checked = false;
+                        }
+                    }
                 });
             });
         </script>
