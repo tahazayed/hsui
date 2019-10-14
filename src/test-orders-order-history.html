@@ -310,15 +310,27 @@
                                                                     </div>
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck11" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck11"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck11">Boston</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck12" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck12"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck12">Chicago</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck13" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck13"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck13">New York</label>
                                                                         </div>
                                                                     </div>
@@ -353,15 +365,27 @@
                                                                     </div>
                                                                     <div class="dropdown-menu-node">
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck111" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck111"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck111">Creative</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck112" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck112"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck112">Finance</label>
                                                                         </div>
                                                                         <div class="custom-control custom-checkbox">
-                                                                            <input type="checkbox" id="customCheck113" class="custom-control-input others" />
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                id="customCheck113"
+                                                                                class="custom-control-input others"
+                                                                            />
                                                                             <label class="custom-control-label" for="customCheck113"
                                                                                 >Human Resources</label
                                                                             >
@@ -400,7 +424,7 @@
 
                                             <!-- Table -->
                                             <div class="table-wrapper table-style">
-                                                <div class="panel">
+                                                <div class="no-panel">
                                                     <div class="table-responsive-lg">
                                                         <table id="testOrders" class="table table-bordered table-striped">
                                                             <thead>
@@ -1088,29 +1112,27 @@
                         .data('offcanvas-component')
                         .close();
                 });
-                
-                $('.dropdown-menu.keep-open').on('click', function (e) {
+
+                $('.dropdown-menu.keep-open').on('click', function(e) {
                     e.stopPropagation();
                 });
 
-                $('.all').on('change', function (e) {
-                   var childs = this.parentElement.parentElement.nextElementSibling.children;
+                $('.all').on('change', function(e) {
+                    var childs = this.parentElement.parentElement.nextElementSibling.children;
 
                     if (this.checked) {
                         for (let child of childs) {
-                            if (child.children[0].checked)
-                                child.children[0].checked = false;
+                            if (child.children[0].checked) child.children[0].checked = false;
                         }
                     }
                 });
 
-                $('.others').on('change', function (e) {
-                   var childs = this.parentElement.parentElement.previousElementSibling.children;
+                $('.others').on('change', function(e) {
+                    var childs = this.parentElement.parentElement.previousElementSibling.children;
 
                     if (this.checked) {
                         for (let child of childs) {
-                            if (child.children[0].checked)
-                                child.children[0].checked = false;
+                            if (child.children[0].checked) child.children[0].checked = false;
                         }
                     }
                 });
