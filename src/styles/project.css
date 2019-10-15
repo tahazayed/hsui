@@ -206,6 +206,13 @@
 .selection-create-test-order .panel {
     padding: 50px;
 }
+.selection-create-test-order .form-agree {
+    padding-top: 20px;
+}
+.selection-create-test-order .form-agree .custom-control .custom-control-label::before,
+.selection-create-test-order .form-agree .custom-control .custom-control-label::after {
+    margin-top: 4px;
+}
 .table-style,
 .table-style td,
 .table-style th,
@@ -378,6 +385,43 @@
 }
 .modal-review .modal-title {
     margin-left: -20px !important;
+}
+.dashboard .custom-control {
+    padding: 0;
+    min-height: 20px;
+    position: relative;
+    display: block;
+}
+.dashboard .custom-control + .custom-control {
+    margin-top: 10px;
+}
+.dashboard .custom-control .custom-control-label {
+    padding-left: 30px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.dashboard .custom-control .custom-control-label::before,
+.dashboard .custom-control .custom-control-label::after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dashboard .custom-control .custom-control-label::before {
+    background-color: #fff;
+    border-color: #353e4e;
+}
+.dashboard .custom-control .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+.dashboard .custom-control .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #3fbb92;
+    background-color: #3fbb92;
+}
+.dashboard .custom-checkbox .custom-control-label::before {
+    border-radius: 2px !important;
 }
 .dashboard .do-edit,
 .dashboard .do-save {
@@ -949,43 +993,6 @@
 }
 .dashboard #filters .dropdown .dropdown-menu > .dropdown-menu-action {
     border-top: 0 none transparent !important;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control {
-    padding: 0;
-    min-height: 20px;
-    position: relative;
-    display: block;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control + .custom-control {
-    margin-top: 10px;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-label {
-    padding-left: 30px;
-    line-height: 20px;
-    font-size: 14px;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-label::before,
-.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-label::after {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-label::before {
-    background-color: #fff;
-    border-color: #353e4e;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: none;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-control .custom-control-input:checked ~ .custom-control-label::before {
-    color: #fff;
-    border-color: #3fbb92;
-    background-color: #3fbb92;
-}
-.dashboard #filters .dropdown .dropdown-menu .custom-checkbox .custom-control-label::before {
-    border-radius: 2px !important;
 }
 .dashboard #filters .collection-dates .division {
     padding: 124px 30px 30px;
