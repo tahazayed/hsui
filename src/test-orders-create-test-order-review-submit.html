@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Use these required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- /End -->
+
+        <!-- Use the minimized version of Bootstrap CSS (bootstrap.min.css) either from package or this CDN above/before any other CSS file -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- /End -->
+
+        <!-- Add these stylsheets in this order AFTER/BELOW Bootstrap -->
+        <link rel="stylesheet" href="styles/offcanvas.css" />
+        <link rel="stylesheet" href="styles/theme.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <!-- /End -->
+
+        <title>Create Test Order - Test Orders - Mission Health</title>
+
+        <!-- FontAwesome - It might be better to download the package instead of using this CDN -->
+        <script src="https://kit.fontawesome.com/fbd365346d.js" crossorigin="anonymous"></script>
+        <!-- /End -->
+    </head>
+
+    <body id="body" class="dashboard" data-spy="scroll" data-target="#menu-contextual" data-offset="120">
+        <!-- Wrapper -->
+        <div class="c-offcanvas-content-wrap">
+            <!-- Header -->
+            <header id="header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
+                <div class="container-fluid">
+                    <a id="triggerButton" class="navbar-menu navbar-toggler btn ml-auto" href="#offCanvas"><i class="icon fas fa-user-circle"></i></a>
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Toolbar -->
+            <nav id="toolbar" class="d-none d-lg-block">
+                <!-- Logo -->
+                <a class="toolbar-brand" title="Mission Health" rel="home" href="/">Mission Health</a>
+                <!-- /Logo -->
+
+                <!-- Accordion -->
+                <div id="accordion" class="accordion toolbar-nav">
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-1" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-1"
+                                aria-expanded="false"
+                                aria-controls="collapse-1"
+                            >
+                                Detailed Reports
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-1" class="card-collapse collapse" aria-labelledby="heading-1" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Biometric Heart Vitality</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Stress Hormone Plus</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Workplace Questionnaire Results</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Results Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-2" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-2"
+                                aria-expanded="false"
+                                aria-controls="collapse-2"
+                            >
+                                Test Orders
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-2" class="card-collapse collapse" aria-labelledby="heading-2" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center active" href="#">Create Test Order</a></li>
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Order History</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex align-items-center" href="#">Individual Order Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+
+                    <!-- Group -->
+                    <div class="card">
+                        <div id="heading-3" class="card-header">
+                            <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse-3"
+                                aria-expanded="false"
+                                aria-controls="collapse-3"
+                            >
+                                Resources
+                                <div class="arrow d-flex align-items-center"><i class="icon far fa-chevron-down"></i></div>
+                            </button>
+                        </div>
+                        <div id="collapse-3" class="card-collapse collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Group -->
+                </div>
+                <!-- /Accordion -->
+            </nav>
+            <!-- /Toolbar -->
+
+            <!-- Main -->
+            <main id="main" role="main">
+                <div class="container-fluid">
+                    <section class="basic block height-auto align-left background-none color-0">
+                        <div class="zone relative space-xs-50 space-lg-80 tint-none">
+                            <div class="container-fluid">
+                                <div class="row gutter-80">
+                                    <div class="col-lg">
+                                        <!-- Title -->
+                                        <header class="node-xs-50">
+                                            <h2>Test Orders</h2>
+                                            <h1>Create Test Order</h1>
+                                        </header>
+                                        <!-- /Title -->
+
+                                        <!-- Content -->
+                                        <section class="node-xs-50">
+                                            <div class="selection-create-test-order selection">
+                                                <div class="selection-body">
+                                                    <h3>Review and Submit</h3>
+                                                    <div class="selection-review">
+                                                        <div class="selection-review-node node-xs-30">
+                                                            <div class="panel">
+                                                                <div class="selection-review-options">
+                                                                    <div class="selection-review-option node-xs-50">
+                                                                        <div class="selection-review-option-content panel-content">
+                                                                            <div class="row gutter-30 align-items-center">
+                                                                                <div class="col-3">
+                                                                                    <img
+                                                                                        class="img-fluid"
+                                                                                        src="https://via.placeholder.com/550x340.jpg?text=Product"
+                                                                                    />
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <h4>Biometric Heart Vitality Test</h4>
+                                                                                    <p class="selection-review-option-text">
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                                                                        blandit ante mi, at tristique metus.
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="selection-review-option node-xs-50">
+                                                                        <div class="selection-review-option-content panel-content">
+                                                                            <div class="row gutter-30 align-items-center">
+                                                                                <div class="col-3">
+                                                                                    <img
+                                                                                        class="img-fluid"
+                                                                                        src="https://via.placeholder.com/550x340.jpg?text=Product"
+                                                                                    />
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <h4>Stress Hormone Plus Test</h4>
+                                                                                    <p class="selection-review-option-text">
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                                                                        blandit ante mi, at tristique metus.
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="selection-review-option-action panel-action d-flex justify-content-end">
+                                                                    <span class="panel-button do-edit">Edit</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="selection-review-node node-xs-30">
+                                                            <div class="row gutter-30">
+                                                                <div class="col">
+                                                                    <div class="panel">
+                                                                        <div class="selection-review-options">
+                                                                            <div class="selection-review-option node-xs-50">
+                                                                                <div class="selection-review-option-content panel-content">
+                                                                                    <h4>Shipping to: Company Address</h4>
+                                                                                    <p class="selection-review-option-text">
+                                                                                        Mission Healthcare
+                                                                                        <br />
+                                                                                        509 Biltmore Ave.
+                                                                                        <br />
+                                                                                        Asheville, NC 28801
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="selection-review-option-action panel-action d-flex justify-content-end"
+                                                                        >
+                                                                            <span class="panel-button do-edit">Edit</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="panel">
+                                                                        <div class="selection-review-options">
+                                                                            <div class="selection-review-option node-xs-50">
+                                                                                <div class="selection-review-option-content panel-content">
+                                                                                    <h4>Locations</h4>
+                                                                                    <p class="selection-review-option-text">
+                                                                                        New York
+                                                                                        <br />
+                                                                                        Los Angeles
+                                                                                        <br />
+                                                                                        San Francisco
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="selection-review-option node-xs-50">
+                                                                                <div class="selection-review-option-content panel-content">
+                                                                                    <h4>Departments</h4>
+                                                                                    <p class="selection-review-option-text">
+                                                                                        Marketing
+                                                                                        <br />
+                                                                                        Finance
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="selection-review-option-action panel-action d-flex justify-content-end"
+                                                                        >
+                                                                            <span class="panel-button do-edit">Edit</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="selection-footer d-flex align-items-center justify-content-between">
+                                                    <button type="button" class="btn btn-text to-previous">
+                                                        <i class="icon far fa-chevron-left"></i>Back
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-main btn-trigger"
+                                                        data-toggle="modal"
+                                                        data-target="#modal-selection-review"
+                                                    >
+                                                        Submit Order
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- /Content -->
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <!-- Menu -->
+                                        <nav id="menu-checkout-steps" class="contextual-menu wizard" data-toggle="affix">
+                                            <h4>Checkout Steps</h4>
+                                            <ul class="contextual-nav nav flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="#">1. Select tests</a></li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">2. Select employees</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">3. Review and submit</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <!-- /Menu -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- /Main -->
+
+            <!-- Footer -->
+            <footer id="footer" class="navbar navbar-expand-lg navbar-fixed-bottom bottom" role="contentinfo">
+                <div class="container-fluid">
+                    <p class="copyright navbar-text"><a class="navbar-link" title="Mission Health" rel="home" href="#">Mission Health</a> © 2019</p>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </div>
+        <!-- /Wrapper -->
+
+        <!-- Offcanvas -->
+        <aside id="offCanvas">
+            <!-- Header -->
+            <header id="offcanvas-header" class="navbar navbar-expand-lg navbar-fixed-top fixed fixed-top" role="banner">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" title="Mission Health" rel="home" href="/"><i class="icon fas fa-user-circle"></i>Mission Health</a>
+                    <!-- /Logo -->
+
+                    <!-- Close -->
+                    <button type="button" id="offCanvasClose" class="btn btn-link btn-close ml-auto">
+                        <i class="icon fas fa-times"></i>
+                    </button>
+                    <!-- /Close -->
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Main -->
+            <main id="offcanvas-main" role="main">
+                <div class="container-fluid">
+                    <section class="basic block height-auto align-left background-none color-0">
+                        <div class="zone relative space-xs-50 space-lg-80 tint-none">
+                            <div class="container-fluid">
+                                <div class="row gutter-80">
+                                    <div class="col-xl">
+                                        <div class="case">
+                                            <h4>Contact Your Account Manager</h4>
+                                            <form class="form-style">
+                                                <div class="form-group">
+                                                    <label for="contact-name">Name</label>
+                                                    <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-title">Title</label>
+                                                    <input type="text" id="contact-title" class="form-control" placeholder="Enter your job title" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-email">Email</label>
+                                                    <input type="email" id="contact-email" class="form-control" placeholder="example@email.com" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-topic">Topic</label>
+                                                    <select id="contact-topic" class="custom-select">
+                                                        <option value="1" selected>General</option>
+                                                        <option value="2">Technical</option>
+                                                        <option value="3">Data</option>
+                                                    </select>
+                                                    <div class="arrow d-flex align-items-center">
+                                                        <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contact-message">Message</label>
+                                                    <textarea
+                                                        id="contact-message"
+                                                        class="form-control"
+                                                        placeholder="Enter your message..."
+                                                    ></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-main">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl">
+                                        <div class="base">
+                                            <h4>Company Information</h4>
+                                            <form class="form-style">
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-name">Company Name</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-name"
+                                                                class="form-control"
+                                                                value="Mission Health"
+                                                                readonly
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-subscription-level">Subscription Level</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-subscription-level"
+                                                                class="form-control"
+                                                                value="Pilot"
+                                                                readonly
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-industry">Industry</label>
+                                                            <select id="company-industry" class="custom-select">
+                                                                <option value="1" selected>Medical</option>
+                                                                <option value="2">Real Estate</option>
+                                                                <option value="3">Retail</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg-10">
+                                                        <div class="form-group">
+                                                            <label for="company-street">Street</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-street"
+                                                                class="form-control"
+                                                                placeholder="Enter your street address"
+                                                                value="509 Biltmore Ave."
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-unit">Unit</label>
+                                                            <input type="text" id="company-unit" class="form-control" placeholder="#" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="company-city">City</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-city"
+                                                                class="form-control"
+                                                                placeholder="Enter city"
+                                                                value="Asheville"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-state">State</label>
+                                                            <select id="company-state" class="custom-select">
+                                                                <option value="1" selected>NC</option>
+                                                                <option value="2">TX</option>
+                                                                <option value="3">WA</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="company-zip">Zip</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-zip"
+                                                                class="form-control"
+                                                                placeholder="Enter zip"
+                                                                value="28801"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="company-country">Country</label>
+                                                            <select id="company-country" class="custom-select">
+                                                                <option value="1" selected>United States</option>
+                                                                <option value="2">Venezuela</option>
+                                                                <option value="3">Wales</option>
+                                                            </select>
+                                                            <div class="arrow d-flex align-items-center">
+                                                                <i class="icon far fa-chevron-down" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="form-break" />
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-name">Contact Name</label>
+                                                            <input type="text" id="company-contact-name" class="form-control" placeholder="Admin" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-title">Contact Title</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-contact-title"
+                                                                class="form-control"
+                                                                placeholder="Admin"
+                                                                value="Head of Human Resources"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row form-gutter-20">
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-email">Contact Email</label>
+                                                            <input
+                                                                type="email"
+                                                                id="company-contact-email"
+                                                                class="form-control"
+                                                                placeholder="example@email.com"
+                                                                value="admin@missionhealth.com"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-column col-lg">
+                                                        <div class="form-group">
+                                                            <label for="company-contact-phone">Contact Phone</label>
+                                                            <input
+                                                                type="text"
+                                                                id="company-contact-phone"
+                                                                class="form-control"
+                                                                placeholder="(555) 555-5555"
+                                                                value="(002) 120-1095"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-text do-cancel">Cancel</button>
+                                                    <button type="submit" class="btn btn-text do-save">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- /Main -->
+
+            <!-- Footer -->
+            <footer id="offcanvas-footer" class="navbar navbar-expand-lg" role="contentinfo">
+                <div class="container-fluid">
+                    <p class="navbar-text to-company">
+                        <a
+                            class="navbar-link"
+                            title="Confirm BioSciences"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.confirmbiosciences.com/"
+                            >Confirm BioSciences</a
+                        >
+                        &ndash; 10123 Carroll Canyon Road, San Diego, CA 92131 &ndash; 800-908-5603
+                    </p>
+                    <a class="navbar-link to-dashboard" href="#" role="button">Return To Main Dashboard<i class="icon fas fa-sign-out-alt"></i></a>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </aside>
+        <!-- /Offcanvas -->
+
+        <!-- Modal -->
+        <div id="modal-selection-review" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-review modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4 class="modal-title"><i class="icon fas fa-check"></i>Your Order Has Been Submitted</h4>
+                        <p>A representative will reach out to you to finalize this order.</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-alternate to-order-history">Go To Order History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+
+        <!-- Use jQuery first, then Popper.js, then Bootstrap JS, and then all other custom UI scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="scripts/offcanvas.pkgd.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var toggleAffix = function(affixElement, scrollElement, wrapper) {
+                    var height = affixElement.outerHeight(),
+                        top = wrapper.offset().top;
+                    if (scrollElement.scrollTop() >= top) {
+                        wrapper.height(height);
+                        affixElement.addClass('affix');
+                    } else {
+                        affixElement.removeClass('affix');
+                        wrapper.height('auto');
+                    }
+                };
+                $('[data-toggle="affix"]').each(function() {
+                    var ele = $(this),
+                        wrapper = $('<div></div>');
+                    ele.before(wrapper);
+                    $(window).on('scroll resize', function() {
+                        toggleAffix(ele, $(this), wrapper);
+                    });
+                    toggleAffix(ele, $(window), wrapper);
+                });
+                $('.scroll a[href^="#"]').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                        if (target.length) {
+                            $('html, body').animate(
+                                {
+                                    scrollTop: target.offset().top - $('#header').height() - 35,
+                                },
+                                500,
+                            );
+                            return false;
+                        }
+                    }
+                });
+                $('#offCanvas').offcanvas({
+                    modifiers: 'right, push', // default options
+                    triggerButton: '#triggerButton', // btn to open offcanvas
+                });
+                $('#offCanvasClose').click(function() {
+                    $('#offCanvas')
+                        .data('offcanvas-component')
+                        .close();
+                });
+            });
+        </script>
+        <!-- /End -->
+    </body>
+</html>
