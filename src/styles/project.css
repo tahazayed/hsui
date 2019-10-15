@@ -17,6 +17,12 @@
 .navbar-expand-lg .navbar-toggler:focus {
     background-color: #fafafa;
 }
+.link-product-catalog {
+    border: 0 none transparent !important;
+    font-size: 16px !important;
+    text-decoration: underline !important;
+    float: right;
+}
 .btn-main {
     background-color: #3fbb92;
     border-color: #3fbb92;
