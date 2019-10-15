@@ -202,8 +202,12 @@
     font-size: 27px;
     color: #3fbb92;
 }
-.selection-create-test-order .panel {
+.selection-create-test-order .panel,
+.selection-create-test-order #filters .panel-section {
     padding: 50px;
+}
+.selection-create-test-order #filters {
+    padding: 0;
 }
 .selection-create-test-order .form-agree {
     padding-top: 20px;
@@ -215,9 +219,6 @@
 }
 .selection-employees .panel .panel-label {
     margin-left: 40px;
-}
-.selection-employees .panel .panel-section {
-    padding: 0;
 }
 .table-style,
 .table-style td,
@@ -908,6 +909,31 @@
 }
 .contextual-menu.wizard .nav > li > a.disabled {
     color: #ddd;
+}
+.contextual-menu .contextual-nav + .contextual-count {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.contextual-menu .contextual-nav + .contextual-count .contextual-count-case {
+    border-top: 1px solid #eee;
+    padding: 40px;
+}
+.contextual-menu .contextual-count .contextual-count-node + .contextual-count-node {
+    padding-top: 40px;
+}
+.contextual-menu .contextual-count .contextual-count-value + .contextual-count-text {
+    padding-top: 9px;
+}
+.contextual-menu .contextual-count .contextual-count-value {
+    line-height: 30px;
+    font-size: 27px;
+    font-weight: 400;
+    color: #3fbb92;
+}
+.contextual-menu .contextual-count .contextual-count-text {
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
 }
 .panel {
     border: 1px solid #eee;
