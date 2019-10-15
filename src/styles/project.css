@@ -192,7 +192,8 @@
 .selection .selection-option.level-very-low .selection-option-value {
     color: #585fab;
 }
-.selection .selection-option .selection-option-text {
+.selection .selection-option .selection-option-text,
+.selection-employees .panel h4 {
     margin: -5px -2px -5px;
     line-height: 22px;
     font-size: 16px;
