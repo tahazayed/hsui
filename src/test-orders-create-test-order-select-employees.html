@@ -178,45 +178,162 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div
-                                                                            class="selection-employees-option-action panel-action d-flex justify-content-end"
-                                                                        >
-                                                                            <span class="panel-button do-edit">Edit</span>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col">
-                                                                    <div class="panel">
-                                                                        <div class="selection-employees-options">
-                                                                            <div class="selection-employees-option node-xs-50">
-                                                                                <div class="selection-employees-option-content panel-content">
-                                                                                    <h4>Locations</h4>
-                                                                                    <p class="selection-employees-option-text">
-                                                                                        New York
-                                                                                        <br />
-                                                                                        Los Angeles
-                                                                                        <br />
-                                                                                        San Francisco
-                                                                                    </p>
+                                                                    <form id="filters" class="panel">
+                                                                        <span class="panel-label">Filters</span>
+                                                                        <!-- Section -->
+                                                                        <div class="panel-section">
+                                                                            <div class="form-row gutter-10">
+                                                                                <div class="col-12">
+                                                                                    <div class="filter-locations filter dropdown">
+                                                                                        <button
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            class="btn btn-filter dropdown-toggle"
+                                                                                            data-toggle="dropdown"
+                                                                                            aria-haspopup="true"
+                                                                                            aria-expanded="false"
+                                                                                        >
+                                                                                            All Locations
+                                                                                        </button>
+                                                                                        <div
+                                                                                            class="dropdown-menu keep-open"
+                                                                                            aria-labelledby="dropdownMenuButton"
+                                                                                        >
+                                                                                            <div class="dropdown-menu-node">
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck10"
+                                                                                                        class="custom-control-input select-all"
+                                                                                                        checked
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck10"
+                                                                                                        >All Locations</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="dropdown-menu-node">
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck11"
+                                                                                                        class="custom-control-input others"
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck11"
+                                                                                                        >Boston</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck12"
+                                                                                                        class="custom-control-input others"
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck12"
+                                                                                                        >Chicago</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck13"
+                                                                                                        class="custom-control-input others"
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck13"
+                                                                                                        >New York</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="selection-employees-option node-xs-50">
-                                                                                <div class="selection-employees-option-content panel-content">
-                                                                                    <h4>Departments</h4>
-                                                                                    <p class="selection-employees-option-text">
-                                                                                        Marketing
-                                                                                        <br />
-                                                                                        Finance
-                                                                                    </p>
+                                                                                <div class="col-12">
+                                                                                    <div class="filter-departments filter dropdown">
+                                                                                        <button
+                                                                                            type="button"
+                                                                                            id="dropdownMenuButton"
+                                                                                            class="btn btn-filter dropdown-toggle"
+                                                                                            data-toggle="dropdown"
+                                                                                            aria-haspopup="true"
+                                                                                            aria-expanded="false"
+                                                                                        >
+                                                                                            All Departments
+                                                                                        </button>
+                                                                                        <div
+                                                                                            class="dropdown-menu keep-open"
+                                                                                            aria-labelledby="dropdownMenuButton"
+                                                                                        >
+                                                                                            <div class="dropdown-menu-node">
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck110"
+                                                                                                        class="custom-control-input select-all"
+                                                                                                        checked
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck110"
+                                                                                                        >All Departments</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="dropdown-menu-node">
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck111"
+                                                                                                        class="custom-control-input others"
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck111"
+                                                                                                        >Creative</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck112"
+                                                                                                        class="custom-control-input others"
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck112"
+                                                                                                        >Finance</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                                <div class="custom-control custom-checkbox">
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        id="customCheck113"
+                                                                                                        class="custom-control-input others"
+                                                                                                    />
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="customCheck113"
+                                                                                                        >Human Resources</label
+                                                                                                    >
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div
-                                                                            class="selection-employees-option-action panel-action d-flex justify-content-end"
-                                                                        >
-                                                                            <span class="panel-button do-edit">Edit</span>
-                                                                        </div>
-                                                                    </div>
+                                                                        <!-- /Section -->
+                                                                    </form>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -224,15 +341,9 @@
                                                 </div>
                                                 <div class="selection-footer d-flex align-items-center justify-content-between">
                                                     <button type="button" class="btn btn-text to-previous">
-                                                        <i class="icon far fa-chevron-left"></i>Back
-                                                    </button>
-                                                    <button
-                                                        type="button"
-                                                        class="btn btn-main btn-trigger"
-                                                        data-toggle="modal"
-                                                        data-target="#modal-selection-review"
-                                                    >
-                                                        Submit Order
+                                                        <i class="icon far fa-chevron-left"></i>Back</button
+                                                    ><button type="button" class="btn btn-text to-next">
+                                                        Apply Selection<i class="icon far fa-chevron-right"></i>
                                                     </button>
                                                 </div>
                                             </div>
@@ -242,14 +353,14 @@
                                     <div class="col-lg-3">
                                         <!-- Menu -->
                                         <nav id="menu-checkout-steps" class="contextual-menu wizard" data-toggle="affix">
-                                            <h4>Checkout Steps</h4>
+                                            <h4>Ordering Steps</h4>
                                             <ul class="contextual-nav nav flex-column">
                                                 <li class="nav-item"><a class="nav-link" href="#">1. Select tests</a></li>
                                                 <li class="nav-item">
                                                     <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">2. Select employees</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">3. Review and submit</a>
+                                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">3. Review and order</a>
                                                 </li>
                                             </ul>
                                         </nav>

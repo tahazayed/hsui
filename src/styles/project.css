@@ -207,10 +207,17 @@
 }
 .selection-create-test-order .form-agree {
     padding-top: 20px;
+    padding-left: 50px;
 }
 .selection-create-test-order .form-agree .custom-control .custom-control-label::before,
 .selection-create-test-order .form-agree .custom-control .custom-control-label::after {
     margin-top: 4px;
+}
+.selection-employees .panel .panel-label {
+    margin-left: 40px;
+}
+.selection-employees .panel .panel-section {
+    padding: 0;
 }
 .table-style,
 .table-style td,
