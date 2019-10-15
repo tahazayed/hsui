@@ -203,10 +203,12 @@
     color: #3fbb92;
 }
 .selection-create-test-order .panel,
-.selection-create-test-order #filters .panel-section {
+.selection-create-test-order #filters .panel-section,
+.selection-employees .panel .panel-section {
     padding: 50px;
 }
-.selection-create-test-order #filters {
+.selection-create-test-order #filters,
+.selection-employees .panel {
     padding: 0;
 }
 .selection-create-test-order .form-agree {
