@@ -1117,26 +1117,6 @@
                     e.stopPropagation();
                 });
 
-<<<<<<< HEAD
-                $('.all').on('change', function(e) {
-                    var childs = this.parentElement.parentElement.nextElementSibling.children;
-
-                    if (this.checked) {
-                        for (let child of childs) {
-                            if (child.children[0].checked) child.children[0].checked = false;
-                        }
-                    }
-                });
-
-                $('.others').on('change', function(e) {
-                    var childs = this.parentElement.parentElement.previousElementSibling.children;
-
-                    if (this.checked) {
-                        for (let child of childs) {
-                            if (child.children[0].checked) child.children[0].checked = false;
-                        }
-                    }
-=======
                 $('.select-all').on('change', function (e) {
                     $(this).parents('.dropdown-menu').find('.others').each((i, elem) => {
                         if(this.checked)
@@ -1153,7 +1133,6 @@
                         $(this).parents('.dropdown-menu').find('.others').each((i, elem) => {
                             elem.checked = false;
                         });
->>>>>>> updated the dropdown behavior
                 });
             
             });
