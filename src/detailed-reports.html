@@ -16,6 +16,7 @@
         <!-- /End -->
 
         <!-- Add these stylsheets in this order AFTER/BELOW Bootstrap -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
         <link rel="stylesheet" href="styles/offcanvas.css" />
         <link rel="stylesheet" href="styles/theme.css" />
         <link rel="stylesheet" href="styles/project.css" />
@@ -232,11 +233,15 @@
                                                                     aria-haspopup="true"
                                                                     aria-expanded="false"
                                                                 >
-                                                                    All Dates<i class="icon far fa-calendar-alt"></i>
+                                                                    Collection Dates<i class="icon far fa-calendar-alt"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu keep-open" aria-labelledby="dropdownMenuButton">
                                                                     <div class="dropdown-menu-node">
-                                                                        Calendar
+                                                                        <div class="collection-dates d-flex">
+                                                                            <div id="filter-dates-from"></div>
+                                                                            <p class="division">to</p>
+                                                                            <div id="filter-dates-to"></div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -975,6 +980,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="scripts/offcanvas.pkgd.min.js"></script>
         <script>
             $(document).ready(function() {
@@ -1047,6 +1053,9 @@
                         }
                     }
                 });
+
+                $('#filter-dates-from').datepicker();
+                $('#filter-dates-to').datepicker();
             });
         </script>
         <!-- /End -->
