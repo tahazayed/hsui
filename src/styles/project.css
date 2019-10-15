@@ -147,8 +147,7 @@
 .selection .selection-footer .to-next > .icon {
     margin-left: 10px;
 }
-.selection h3 + .selection-options,
-.selection h3 + .selection-review {
+.selection h3 + .selection-wrapper {
     padding-top: 30px;
 }
 .selection .selection-option {
