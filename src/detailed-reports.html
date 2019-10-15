@@ -186,7 +186,7 @@
                                                                             <input
                                                                                 type="checkbox"
                                                                                 id="customCheck0"
-                                                                                class="custom-control-input all"
+                                                                                class="custom-control-input select-all"
                                                                                 checked
                                                                             />
                                                                             <label class="custom-control-label" for="customCheck0"
@@ -312,7 +312,7 @@
                                                                             <input
                                                                                 type="checkbox"
                                                                                 id="customCheck10"
-                                                                                class="custom-control-input all"
+                                                                                class="custom-control-input select-all"
                                                                                 checked
                                                                             />
                                                                             <label class="custom-control-label" for="customCheck10"
@@ -367,7 +367,7 @@
                                                                             <input
                                                                                 type="checkbox"
                                                                                 id="customCheck110"
-                                                                                class="custom-control-input all"
+                                                                                class="custom-control-input select-all"
                                                                                 checked
                                                                             />
                                                                             <label class="custom-control-label" for="customCheck110"
@@ -1034,24 +1034,22 @@
                     e.stopPropagation();
                 });
 
-                $('.all').on('change', function(e) {
-                    var childs = this.parentElement.parentElement.nextElementSibling.children;
+                $('.select-all').on('change', function (e) {
+                    $(this).parents('.dropdown-menu').find('.others').each((i, elem) => {
+                        if(this.checked)
+                            elem.checked = false 
+                     });
 
-                    if (this.checked) {
-                        for (let child of childs) {
-                            if (child.children[0].checked) child.children[0].checked = false;
-                        }
-                    }
                 });
 
-                $('.others').on('change', function(e) {
-                    var childs = this.parentElement.parentElement.previousElementSibling.children;
-
-                    if (this.checked) {
-                        for (let child of childs) {
-                            if (child.children[0].checked) child.children[0].checked = false;
-                        }
-                    }
+                $('.others').on('change', function (e) {
+                    var optionsCount = $(this).parents('.dropdown-menu').find('.others').length;
+                    var selectedOptionsCount = $(this).parents('.dropdown-menu').find('.others:checked').length;
+                    $(this).parents('.dropdown-menu').find('.select-all')[0].checked = (selectedOptionsCount == optionsCount);
+                    if (selectedOptionsCount == optionsCount)
+                        $(this).parents('.dropdown-menu').find('.others').each((i, elem) => {
+                            elem.checked = false;
+                        });
                 });
 
                 $('#filter-dates-from').datepicker();
