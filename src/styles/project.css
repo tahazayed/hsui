@@ -305,6 +305,11 @@
 .form-style .form-row + .form-row {
     padding-top: 10px;
 }
+.form-simple .form-control,
+.form-simple .custom-select {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 .modal .modal-dialog {
     max-width: 900px;
     height: 100vh;
