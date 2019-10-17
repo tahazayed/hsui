@@ -153,7 +153,7 @@
                         <div class="zone relative space-xs-50 space-lg-80 tint-none">
                             <div class="container-fluid">
                                 <div class="row gutter-80">
-                                    <div class="col-lg">
+                                    <div class="col-lg-9">
                                         <!-- Title -->
                                         <header class="node-xs-50">
                                             <h2>Detailed Reports</h2>
@@ -994,6 +994,7 @@
                         affixElement.removeClass('affix');
                         wrapper.height('auto');
                     }
+                    affixElement.width($(wrapper).width());
                 };
                 $('[data-toggle="affix"]').each(function() {
                     var ele = $(this),
