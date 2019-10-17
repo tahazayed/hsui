@@ -538,6 +538,8 @@
                         affixElement.removeClass('affix');
                         wrapper.height('auto');
                     }
+                    affixElement.width($(wrapper).width());
+
                 };
                 $('[data-toggle="affix"]').each(function() {
                     var ele = $(this),
