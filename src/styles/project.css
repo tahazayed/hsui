@@ -847,12 +847,6 @@
 }
 .contextual-menu {
     margin-top: 115px;
-    max-width: 213px;
-}
-@media (min-width: 1560px) {
-    .contextual-menu {
-        max-width: 273px;
-    }
 }
 .contextual-menu.affix {
     margin-right: 50px;
