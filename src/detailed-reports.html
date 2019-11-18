@@ -650,7 +650,13 @@
                                                                 </button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <h4 class="modal-title">...</h4>
+                                                                <h4 class="modal-title">Action Currently Unavailable</h4>
+                                                                <p>Please contact your account manager to send a targeted email.</p>
+                                                            </div>
+                                                            <div class="modal-footer justify-content-between">
+                                                                <button type="button" class="btn btn-text to-previous">
+                                                                    <i class="icon far fa-chevron-left"></i>Back</button
+                                                                ><button type="button" class="btn btn-main to-okay">Okay</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1035,22 +1041,32 @@
                     e.stopPropagation();
                 });
 
-                $('.select-all').on('change', function (e) {
-                    $(this).parents('.dropdown-menu').find('.others').each((i, elem) => {
-                        if(this.checked)
-                            elem.checked = false 
-                     });
-
+                $('.select-all').on('change', function(e) {
+                    $(this)
+                        .parents('.dropdown-menu')
+                        .find('.others')
+                        .each((i, elem) => {
+                            if (this.checked) elem.checked = false;
+                        });
                 });
 
-                $('.others').on('change', function (e) {
-                    var optionsCount = $(this).parents('.dropdown-menu').find('.others').length;
-                    var selectedOptionsCount = $(this).parents('.dropdown-menu').find('.others:checked').length;
-                    $(this).parents('.dropdown-menu').find('.select-all')[0].checked = (selectedOptionsCount == optionsCount);
+                $('.others').on('change', function(e) {
+                    var optionsCount = $(this)
+                        .parents('.dropdown-menu')
+                        .find('.others').length;
+                    var selectedOptionsCount = $(this)
+                        .parents('.dropdown-menu')
+                        .find('.others:checked').length;
+                    $(this)
+                        .parents('.dropdown-menu')
+                        .find('.select-all')[0].checked = selectedOptionsCount == optionsCount;
                     if (selectedOptionsCount == optionsCount)
-                        $(this).parents('.dropdown-menu').find('.others').each((i, elem) => {
-                            elem.checked = false;
-                        });
+                        $(this)
+                            .parents('.dropdown-menu')
+                            .find('.others')
+                            .each((i, elem) => {
+                                elem.checked = false;
+                            });
                 });
 
                 $('#filter-dates-from').datepicker();
