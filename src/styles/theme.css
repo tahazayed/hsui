@@ -1472,7 +1472,7 @@ ol:not([class*='list-reset']):not([class*='row']):not([class*='nav']):not([class
 ul:not([class*='list-reset']):not([class*='row']):not([class*='nav']):not([class*='navbar-nav']):not([class*='dropdown-menu']):not([class*='pagination']):not([class*='carousel-indicators'])
     > li
     + li {
-    padding-top: 7px;
+    padding-top: 0;
 }
 ol + h2,
 ol + h3,
@@ -1502,7 +1502,7 @@ h4 + ol,
 h4 + ul,
 p + ol,
 p + ul {
-    padding-top: 50px;
+    padding-top: 43px;
 }
 h2 + h1,
 h3 + h1,
@@ -1920,6 +1920,8 @@ h4 {
 ol:not([class*='list-reset']):not([class*='row']):not([class*='nav']):not([class*='navbar-nav']):not([class*='dropdown-menu']):not([class*='pagination']):not([class*='carousel-indicators']),
 ul:not([class*='list-reset']):not([class*='row']):not([class*='nav']):not([class*='navbar-nav']):not([class*='dropdown-menu']):not([class*='pagination']):not([class*='carousel-indicators']) {
     padding-left: 20px;
+    line-height: 30px;
+    font-size: 20px;
 }
 @media (min-width: 992px) {
     ol:not([class*='list-reset']):not([class*='row']):not([class*='nav']):not([class*='navbar-nav']):not([class*='dropdown-menu']):not([class*='pagination']):not([class*='carousel-indicators']),

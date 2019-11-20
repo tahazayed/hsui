@@ -578,7 +578,7 @@
                                                                             type="email"
                                                                             id="draft-email"
                                                                             class="form-control"
-                                                                            placeholder="Subject line"
+                                                                            placeholder="Recipients"
                                                                             value="Very High Blood Cholesterol Group, Slightly High Blood Cholesterol Group"
                                                                         />
                                                                     </div>
@@ -650,13 +650,30 @@
                                                                 </button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <h4 class="modal-title">Action Currently Unavailable</h4>
-                                                                <p>Please contact your account manager to send a targeted email.</p>
+                                                                <h4 class="modal-title">You’re Almost There...</h4>
+                                                                <p>
+                                                                    To send a message to targeted employees, start by emailing your account manager
+                                                                    for assistance. We’re happy to help you!
+                                                                </p>
+                                                                <p>
+                                                                    We can help create a targeted message for you, or you can include a custom message
+                                                                    with specific content you would like to use.
+                                                                </p>
+                                                                <p>
+                                                                    Once your request is received, your account manager will confirm the recipients,
+                                                                    the final email content, and send your email!
+                                                                </p>
                                                             </div>
                                                             <div class="modal-footer justify-content-between">
                                                                 <button type="button" class="btn btn-text to-previous">
                                                                     <i class="icon far fa-chevron-left"></i>Back</button
-                                                                ><button type="button" class="btn btn-main to-okay">Okay</button>
+                                                                ><a
+                                                                    role="button"
+                                                                    class="btn btn-main to-draft-email-message"
+                                                                    href="mailto:pmckellips@ourhealthstate.com?Subject=HealthState%20Message%20Request&body=%0d%0a%0d%0a%0d%0a---%0d%0aDO%20NOT%20DELETE%0d%0aPanel%20Name:%20PANEL_VARIABLE%0d%0aRecipient%20Groups%20Selected:%20GROUPS_VARIABLE"
+                                                                    target="_blank"
+                                                                    >Send Message Request</a
+                                                                >
                                                             </div>
                                                         </div>
                                                     </div>
