@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Use these required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- /End -->
+
+        <!-- Use the minimized version of Bootstrap CSS (bootstrap.min.css) either from package or this CDN above/before any other CSS file -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- /End -->
+
+        <!-- Add these stylsheets in this order AFTER/BELOW Bootstrap -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="styles/offcanvas.css" />
+        <link rel="stylesheet" href="styles/theme.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+        <!-- /End -->
+
+        <!-- Splash styles -->
+        <style type="text/css">
+            body {
+                padding-bottom: 80px !important;
+                height: 100vh !important;
+                overflow: hidden !important;
+            }
+
+            #splash,
+            #splash > .container-fluid,
+            #splash > .container-fluid > .basic,
+            #splash > .container-fluid > .basic > .zone {
+                height: 100% !important;
+            }
+
+            #splash h1 {
+                margin-right: -40px !important;
+                font-size: 130px !important;
+                font-weight: 700 !important;
+                line-height: 130px !important;
+                color: #fff !important;
+            }
+
+            #splash h1 > .line,
+            #splash h1 > .trademark {
+                font-family: 'Roboto', sans-serif !important;
+                font-weight: 300 !important;
+                display: inline-block !important;
+            }
+
+            #splash h1 > .line {
+                border-bottom: 5px solid #3fbb92 !important;
+            }
+
+            #splash h1 > .trademark {
+                margin-top: -10px;
+                font-size: 80px !important;
+                vertical-align: middle !important;
+            }
+
+            #splash h2 {
+                font-family: 'Roboto', sans-serif !important;
+                font-size: 27px !important;
+                font-weight: 300 !important;
+                line-height: 35px !important;
+                text-transform: uppercase !important;
+                color: #fff !important;
+            }
+
+            #splash h2 + h1,
+            #splash .logo {
+                padding-top: 30px !important;
+            }
+
+            #splash .logo {
+                margin-right: -30px !important;
+                width: 750px !important;
+            }
+
+            #splash .case {
+                padding: 0 !important;
+            }
+
+            #splash .btn-text {
+                margin-bottom: 25px !important;
+                padding: 0 !important;
+                position: absolute !important;
+                bottom: 0 !important;
+                font-size: 16px !important;
+                font-weight: 300 !important;
+                line-height: 30px !important;
+                text-transform: none !important;
+            }
+
+            #splash + #footer {
+                background-color: transparent !important;
+                border-top: 1px solid #474e60 !important;
+                color: #fff !important;
+            }
+
+            #splash + #footer .copyright,
+            #splash + #footer .copyright > a {
+                color: #fff !important;
+            }
+
+            #modal-splash .form-break + .form-break {
+                padding-top: 40px !important;
+            }
+        </style>
+        <!-- /End -->
+
+        <title>Biometric Heart Vitality - Detailed Reports - Mission Health</title>
+
+        <!-- FontAwesome - It might be better to download the package instead of using this CDN -->
+        <script src="https://kit.fontawesome.com/fbd365346d.js" crossorigin="anonymous"></script>
+        <!-- /End -->
+    </head>
+
+    <body id="body">
+        <!-- Main -->
+        <main id="splash" role="main">
+            <div class="container-fluid">
+                <section class="basic block height-auto align-left background-none color-0">
+                    <div class="zone relative space-xs-50 space-lg-80 tint-none d-flex align-items-center">
+                        <div class="container">
+                            <header class="copy text-center node-xs-80">
+                                <h2>Welcome To</h2>
+                                <h1 class="sr-only">Health<span class="line">State</span><span class="trademark">&trade;</span></h1>
+                                <img class="logo img-fluid" src="images/logo-white.png" alt="HealthState" />
+                            </header>
+                            <section class="node-xs-80 d-flex justify-content-center">
+                                <a class="btn btn-main" href="https://portal.ourhealthstate.com/accounts/v8/HealthState/login">Log In</a
+                                ><a class="btn btn-main" href="https://portal.ourhealthstate.com/accounts/v8/HealthState/register">Register</a>
+                            </section>
+                            <footer class="case d-flex justify-content-center">
+                                <button type="button" class="btn btn-text btn-trigger" data-toggle="modal" data-target="#modal-splash">
+                                    Looking For a Better Workplace Wellness Program? Click Here.
+                                </button>
+                            </footer>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- /Main -->
+
+        <!-- Footer -->
+        <footer id="footer" class="navbar navbar-expand-lg navbar-fixed-bottom bottom" role="contentinfo">
+            <div class="container justify-content-center">
+                <p class="copyright navbar-text"><a class="navbar-link" title="HealthState" rel="home" href="#">HealthState</a> © 2020</p>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <!-- Modal -->
+        <div id="modal-splash" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-report modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Contact Us</h4>
+                        <p>Get in touch for more information on creating an actionable workplace wellness program, with HealthState.</p>
+                        <form class="form-style">
+                            <div class="form-row form-gutter-20">
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-first-name" class="sr-only">First Name*</label>
+                                        <input type="text" id="splash-first-name" class="form-control" placeholder="First Name*" />
+                                    </div>
+                                </div>
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-last-name" class="sr-only">Last Name*</label>
+                                        <input type="text" id="splash-last-name" class="form-control" placeholder="Last Name*" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form-gutter-20 form-break">
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-work-email" class="sr-only">Work Email*</label>
+                                        <input type="email" id="splash-work-email" class="form-control" placeholder="Work Email*" />
+                                    </div>
+                                </div>
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-phone-number" class="sr-only">Phone Number</label>
+                                        <input type="tel" id="splash-phone-number" class="form-control" placeholder="Phone Number" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form-gutter-20 form-break">
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-company-name" class="sr-only">Company*</label>
+                                        <input type="text" id="splash-company-name" class="form-control" placeholder="Company*" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form-gutter-20">
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-company-size" class="sr-only">Company Size*</label>
+                                        <input type="text" id="splash-company-size" class="form-control" placeholder="Company Size*" />
+                                    </div>
+                                </div>
+                                <div class="form-column col-lg">
+                                    <div class="form-group">
+                                        <label for="splash-job-title" class="sr-only">Job Title*</label>
+                                        <input type="text" id="splash-job-title" class="form-control" placeholder="Job Title*" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer"><button type="submit" class="btn btn-main">Submit</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+
+        <!-- Use jQuery first, then Popper.js, then Bootstrap JS, and then all other custom UI scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="scripts/offcanvas.pkgd.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var toggleAffix = function(affixElement, scrollElement, wrapper) {
+                    var height = affixElement.outerHeight(),
+                        top = wrapper.offset().top;
+                    if (scrollElement.scrollTop() >= top) {
+                        wrapper.height(height);
+                        affixElement.addClass('affix');
+                    } else {
+                        affixElement.removeClass('affix');
+                        wrapper.height('auto');
+                    }
+                    affixElement.width($(wrapper).width());
+                };
+                $('[data-toggle="affix"]').each(function() {
+                    var ele = $(this),
+                        wrapper = $('<div></div>');
+                    ele.before(wrapper);
+                    $(window).on('scroll resize', function() {
+                        toggleAffix(ele, $(this), wrapper);
+                    });
+                    toggleAffix(ele, $(window), wrapper);
+                });
+                $('.scroll a[href^="#"]').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                        if (target.length) {
+                            $('html, body').animate(
+                                {
+                                    scrollTop: target.offset().top - $('#header').height() - 35,
+                                },
+                                500,
+                            );
+                            return false;
+                        }
+                    }
+                });
+                $('#offCanvas').offcanvas({
+                    modifiers: 'right, push', // default options
+                    triggerButton: '#triggerButton', // btn to open offcanvas
+                });
+                $('#offCanvasClose').click(function() {
+                    $('#offCanvas')
+                        .data('offcanvas-component')
+                        .close();
+                });
+
+                $('.dropdown-menu.keep-open').on('click', function(e) {
+                    e.stopPropagation();
+                });
+
+                $('.select-all').on('change', function(e) {
+                    $(this)
+                        .parents('.dropdown-menu')
+                        .find('.others')
+                        .each((i, elem) => {
+                            if (this.checked) elem.checked = false;
+                        });
+                });
+
+                $('.others').on('change', function(e) {
+                    var optionsCount = $(this)
+                        .parents('.dropdown-menu')
+                        .find('.others').length;
+                    var selectedOptionsCount = $(this)
+                        .parents('.dropdown-menu')
+                        .find('.others:checked').length;
+                    $(this)
+                        .parents('.dropdown-menu')
+                        .find('.select-all')[0].checked = selectedOptionsCount == optionsCount;
+                    if (selectedOptionsCount == optionsCount)
+                        $(this)
+                            .parents('.dropdown-menu')
+                            .find('.others')
+                            .each((i, elem) => {
+                                elem.checked = false;
+                            });
+                });
+
+                $('#filter-dates-from').datepicker();
+                $('#filter-dates-to').datepicker();
+            });
+        </script>
+        <!-- /End -->
+    </body>
+</html>
